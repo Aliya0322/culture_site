@@ -96,7 +96,7 @@ body {
 }
 
 .slide-content img {
-    width: 60%; /* Картинка занимает 60% */
+    width: 60%; 
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -221,11 +221,11 @@ body {
     padding: 0 20px;
 }
 
-.section-title {
-    color: #333;
+.events-calendar .section-title {
+    color: #E85A4F;
     font-size: 32px;
     font-weight: 700;
-    margin: 0;
+    margin-bottom: 3rem;
 }
 
 .cards-grid {
@@ -276,7 +276,7 @@ body {
 
 .card-link {
     display: inline-block;
-    color: #b22222;
+    color: #E85A4F;
     font-weight: 600;
     text-decoration: none;
     font-size: 16px;
@@ -307,12 +307,23 @@ body {
     }
 }
 
+.past-events .stat-badge {
+        background: #8e8d8a;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
 .past-events {
     background-color: #ffffff;
     padding: 80px 0;
     font-family: 'Arial', sans-serif;
 }
-
+.past-events .card-link{
+    color: #8e8d8a;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -329,14 +340,14 @@ body {
 }
 
 .section-title {
-    color: #333;
+    color: #8e8d8a;
     font-size: 32px;
     font-weight: 700;
     margin: 0;
 }
 
 .archive-link {
-    color: #b22222;
+    color: #E85A4F;;
     font-weight: 600;
     text-decoration: none;
     font-size: 18px;
@@ -372,16 +383,20 @@ body {
     transform: translateY(-5px);
 }
 
+.card img{
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
 /* Стили статистических бейджей */
 .card-stats {
     display: flex;
     gap: 15px;
-    margin-bottom: 25px;
 }
 
 .stat-badge {
-    background: #666;
-    color: white;
+    background: #E85A4F;
+    color: #fff;
     padding: 8px 15px;
     border-radius: 5px;
     font-weight: bold;
@@ -392,7 +407,6 @@ body {
 .card-title {
     color: #333333;
     font-size: 22px;
-    margin-bottom: 15px;
     font-weight: 600;
     line-height: 1.4;
     flex-grow: 1;
@@ -402,14 +416,12 @@ body {
 .card-date {
     color: #666;
     font-weight: bold;
-    margin-bottom: 20px;
     font-size: 16px;
     font-style: italic;
 }
 
 /* Стили блока с результатами */
 .event-result {
-    margin-bottom: 25px;
     display: flex;
     align-items: baseline;
 }
@@ -429,17 +441,16 @@ body {
 /* Стили ссылки на фотоотчёт */
 .card-link {
     display: inline-block;
-    color: #b22222;
+    color: #E98074;
     font-weight: 600;
     text-decoration: none;
     font-size: 16px;
     transition: all 0.3s ease;
-    margin-top: auto;
     align-self: flex-start;
 }
 
 .card-link:hover {
-    color: #8b0000;
+    color: #E85A4F;
     transform: translateX(5px);
 }
 
