@@ -263,7 +263,6 @@ body {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 3rem;
-    
 }
 
 
@@ -639,7 +638,7 @@ body {
     .slide-text, .slide-content img {
         width: 60%;
         height: auto;
-        border-radius: none;
+        border-radius: 10px;
         font-size: 12px;
     }
     
@@ -736,16 +735,25 @@ body {
 }
 
 @media (max-width: 480px) {
-    .section-title {
-        font-size: 28px;
+    .slide-text, .slide-content img {
+        width: 60%;
+        height: auto;
+        border-radius: 10px;
+        font-size: 10px;
     }
 
-    .slide-content img {
-        max-height: 150px;
+    .slide-text {
+        padding: 5px;
+
+    }
+
+    .slide-content {
+        gap: 0.3rem;
     }
 
     .card img {
-        max-height: 120px;
+        max-height: 150px;
+        max-width: 250px;
     }
 
     .card {
@@ -772,5 +780,14 @@ body {
     }
     .footer-content {
         grid-template-columns: 1fr;
+    }
+
+    .social-link {
+        width: 50px;
+        height: 50px;
+    }
+
+    .feedback-button {
+        padding: 12px 10px;
     }
 }
