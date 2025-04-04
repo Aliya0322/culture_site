@@ -11,27 +11,30 @@
 <body>
     <div class="frame-box">
         <header class="header">
-            <div class="header-top">
-                <div class="logo-box">
-                    <img src="/img/logo.png" alt="Логотип">
-                    <div>
-                        <div class="logo-text">Фонд содействия развитию дружбы народов и<br> национальных культур<br> "АСТАНА"</div>
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo-box">
+                        <img src="/img/logo.png" alt="Логотип">
+                        <div>
+                            <div class="logo-text">Фонд содействия развитию дружбы народов и<br> национальных культур<br> "АСТАНА"</div>
+                        </div>
+                    </div>
+                    <div class="social-buttons">
+                        <a href="#" class="search-button"><i class="fas fa-search"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <div class="menu-icon" id="menu-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>                    
                     </div>
                 </div>
-                <div class="social-buttons">
-                    <a href="#"><i class="fab fa-vk"></i></a>
-                    <a href="#"><i class="fas fa-r"></i></a>
-                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                    <a href="#" class="search-button"><i class="fas fa-search"></i></a>
-                </div>
+                <nav class="nav" id="nav-links">
+                    <a href="#">О ФОНДЕ</a>
+                    <a href="#">МЕРОПРИЯТИЯ</a>
+                    <a href="#">СМИ О НАС</a>
+                    <a href="#">ПРЕСС-СЛУЖБА</a>
+                    <a href="#">КОНТАКТЫ</a>
+                </nav>
             </div>
-            <nav class="nav">
-                <a href="#">О ФОНДЕ</a>
-                <a href="#">МЕРОПРИЯТИЯ</a>
-                <a href="#">СМИ О НАС</a>
-                <a href="#">ПРЕСС-СЛУЖБА</a>
-                <a href="#">КОНТАКТЫ</a>
-            </nav>
         </header>
         <section class="slider-section">
             <div class="swiper mySwiper">
@@ -68,31 +71,21 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        
-        <section class="sponsors">
-            <div class="container">
-                <div class="sponsors-logos">
-                    <img src="img/moscow24.png" alt="Москва 24">
-                    <img src="img/vechernaya-moskva.png" alt="Вечерняя Москва">
-                    <img src="/img/aif.png" alt="Аргументы и факты">
-                </div>
-            </div>
-        </section>
         <section class="about-mission">
             <div class="container">
                 <div class="about-mission__grid">
                     <article class="about-card">
-                        <h2 class="about-card__title">О ФОНДЕ</h2>
+                        <h2 class="about-card__title">О фонде</h2>
                         <div class="about-card__content">
-                            <p>ООГО «Российский фонд культуры» – общероссийская общественно-государственная организация в сфере культуры и искусства. Фонд является важным общественным институтом, оказывающий влияние на формирование государственной культурной политики.</p>
+                            <p>Фонд "Астана" – это общественно-государственная организация, деятельность которой направлена на укрепление межнационального согласия, сохранение и популяризацию культурного наследия народов России и мира. Фонд выступает площадкой для диалога культур, способствуя взаимопониманию и сотрудничеству между различными этническими общинами через организацию просветительских, творческих и патриотических мероприятий.</p>
                             <a href="#" class="about-card__link">Подробнее →</a>
                         </div>
                     </article>
         
                     <article class="mission-card">
-                        <h2 class="mission-card__title">МИССИЯ</h2>
+                        <h2 class="mission-card__title">Миссия</h2>
                         <div class="mission-card__content">
-                            <p>С помощью культурного образования и нравственного воспитания личности и нации придать культуре статус материальной силы и способствовать устойчивому развитию российского государства и гражданского общества</p>
+                            <p>Развитие и поддержка межкультурного диалога, укрепление дружбы между народами через сохранение традиций, популяризацию национального искусства и воспитание уважения к многообразию культур. Фонд содействует реализации проектов, которые объединяют людей разных национальностей, способствуют сохранению их идентичности и в то же время формируют общие ценности гражданского общества.</p>
                         </div>
                     </article>
                 </div>
@@ -101,7 +94,6 @@
         <section class="events-calendar">
             <div class="container">
                 <h2 class="section-title">Календарь мероприятий</h2>
-                
                 <div class="cards-grid">
                     <!-- Блок 1 -->
                     <article class="card">
@@ -109,9 +101,7 @@
                         <div class="card-stats">
                             <span class="stat-badge">01 марта 2025</span>
                         </div>
-                        
                         <h3 class="card-title">Весна в Москве: лучшие места для свиданий</h3>
-                    
                         <a href="#" class="card-link">Подробнее →</a>
                     
                     </article>
@@ -193,6 +183,16 @@
                 </div>
             </div>
         </section>
+        <section class="sponsors">
+            <div class="container">
+                <h2 class="sponsors-tittle">Партнеры</h2>
+                <div class="sponsors-logos">
+                    <img src="img/moscow24.png" alt="Москва 24">
+                    <img src="img/vechernaya-moskva.png" alt="Вечерняя Москва">
+                    <img src="/img/aif.png" alt="Аргументы и факты">
+                </div>
+            </div>
+        </section>
         <footer class="site-footer">
             <div class="container">
                 <div class="footer-content">
@@ -209,24 +209,24 @@
                     <div class="footer-contacts">
                         <h3 class="footer-subtitle">КОНТАКТЫ</h3>
                         <ul class="contact-list">
-                            <li>119018, г. Москва, Гоголевский бульвар, д. 6/7, стр. 1</li>
-                            <li>+7 (495) 927-10-15</li>
-                            <li>info@rfculture.ru</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 119018, г. Москва, Гоголевский бульвар, д. 6/7, стр. 1</li>
+                            <li><i class="fas fa-phone"></i> +7 (495) 927-10-15</li>
+                            <li><i class="fas fa-envelope"></i> info@rfculture.ru</li>
                         </ul>
                     </div>
                     
                     <div class="footer-social">
                         <h3 class="footer-subtitle">ФОНД В СОЦСЕТЯХ</h3>
                         <div class="social-links">
-                            <a href="#" class="social-link">VK</a>
-                            <a href="#" class="social-link">Telegram</a>
-                            <a href="#" class="social-link">YouTube</a>
+                            <a href="#" class="social-link" aria-label="What's app">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
                         </div>
                         
-                        <div class="satellite-sites">
-                            <h4 class="sites-title">САЙТЫ САТЕЛЛИТЫ</h4>
-                            <a href="#" class="site-link">svyatoslavrichter.ru</a>
-                            <a href="#" class="site-link">cultureonline.ru</a>
+                        <div class="feedback-section">
+                            <button class="feedback-button">
+                                <i class="fas fa-envelope"></i> Обратная связь
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -237,9 +237,10 @@
                     </div>
                 </div>
             </div>
-        </footer>        
+        </footer>     
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="slider.js"></script>
+  <script src="slider.js" defer></script>
+  <script src="menu.js" defer></script>
 </body>
 </html>
