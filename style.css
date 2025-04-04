@@ -317,7 +317,7 @@ body {
 }
 
 .archive-link:hover {
-    color: #8b0000;
+    color: #659dbd;
 }
 
 /* Стили сетки карточек */
@@ -417,7 +417,7 @@ body {
 }
 
 .card-link:hover {
-    color: #E85A4F;
+    color: #659dbd;
     transform: translateX(5px);
 }
 
@@ -513,7 +513,7 @@ body {
 }
 
 .social-link:hover {
-    color: #8b0000;
+    color: #659dbd;
     text-decoration: none;
 }
 
@@ -533,7 +533,7 @@ body {
 }
 
 .feedback-button:hover {
-    background: #b22222;
+    background: #659dbd;
     transform: translateY(-2px);
 }
 
