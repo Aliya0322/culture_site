@@ -205,7 +205,7 @@ body {
 
 .about-mission__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
 }
 
@@ -656,7 +656,15 @@ body {
         margin: 0;
         text-align: center;
     }
-        
+    
+    .about-mission__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card, .mission-card {
+        padding: 25px;
+    }
+
     .archive-link {
         margin-left: 0;
         text-align: center;
