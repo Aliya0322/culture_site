@@ -226,11 +226,11 @@ body {
   .tabs-horizontal .tab {
     padding: 15px 20px;
     cursor: pointer;
-    background-color: #EAE7DC;
-    border: none;
+    background-color: #fff;
+    border: 2px solid #00ABC2;
     border-radius: 8px;
     font-weight: 600;
-    color: #333;
+    color: #00ABC2;
     transition: all 0.3s ease;
     cursor: pointer;
   }
