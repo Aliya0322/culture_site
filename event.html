@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="event.css">
+    <title>Astana Fund Web site</title>
+</head>
+<body>
+    <div class="frame-box">
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo-box">
+                        <img src="/img/logo.png" alt="Логотип">
+                        <div>
+                            <div class="logo-text">Фонд содействия развитию дружбы народов и<br> национальных культур<br> "АСТАНА"</div>
+                        </div>
+                    </div>
+                    <div class="social-buttons">
+                        <a href="#" class="search-button"><i class="fas fa-search"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <div class="menu-icon" id="menu-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>                    
+                    </div>
+                </div>
+                <nav class="nav" id="nav-links">
+                    <a href="/about.html">О ФОНДЕ</a>
+                    <a href="#">МЕРОПРИЯТИЯ</a>
+                    <a href="#">СМИ О НАС</a>
+                    <a href="#">ПРЕСС-СЛУЖБА</a>
+                    <a href="#">КОНТАКТЫ</a>
+                </nav>
+            </div>
+        </header>
+        <section class="tabs-wrapper">
+            <div class="container">
+              <h2 class="tabs-header">Архив мероприятий</h2>
+          
+              <!-- Горизонтальные табы -->
+              <div class="tabs-horizontal">
+                <button class="tab active" data-tab="current">Актуальные</button>
+                <button class="tab" data-tab="past">Прошедшие</button>
+              </div>
+          
+              <!-- Контент табов -->
+              <div class="tabs-content">
+                <!-- Актуальные -->
+<div class="tab-content active" id="current">
+    <div class="cards-grid">
+      <article class="card">
+        <img src="/img/event-dev.jpg" alt="Конференция по веб-разработке">
+        <div class="card-stats">
+          <span class="stat-badge">15 октября 2023</span>
+        </div>
+        <h3 class="card-title">Конференция по веб-разработке</h3>
+        <p>Ежегодная конференция для веб-разработчиков с участием ведущих экспертов отрасли.</p>
+        <a href="#" class="card-link">Подробнее →</a>
+      </article>
+  
+      <article class="card">
+        <img src="/img/event-tech.jpg" alt="Выставка технологий">
+        <div class="card-stats">
+          <span class="stat-badge">20–22 ноября 2023</span>
+        </div>
+        <h3 class="card-title">Выставка современных технологий</h3>
+        <p>Крупнейшая выставка инновационных технологий и решений для бизнеса.</p>
+        <a href="#" class="card-link">Подробнее →</a>
+      </article>
+    </div>
+  </div>
+  
+  <!-- Прошедшие -->
+  <div class="tab-content" id="past">
+    <div class="year-filter">
+      <div class="year-btn active" onclick="filterByYear('all')">Все</div>
+      <div class="year-btn" onclick="filterByYear('2023')">2023</div>
+      <div class="year-btn" onclick="filterByYear('2022')">2022</div>
+      <div class="year-btn" onclick="filterByYear('2021')">2021</div>
+    </div>
+  
+    <div class="cards-grid" id="past-events">
+      <article class="card" data-year="2023">
+        <img src="/img/event-art.jpg" alt="Фестиваль искусств">
+        <div class="card-stats">
+          <span class="stat-badge">12–15 мая 2023</span>
+        </div>
+        <h3 class="card-title">Фестиваль искусств</h3>
+        <p>Международный фестиваль современного искусства с участием художников из 15 стран.</p>
+        <a href="#" class="card-link">Подробнее →</a>
+      </article>
+  
+      <article class="card" data-year="2022">
+        <img src="/img/event-summit.jpg" alt="Технологический саммит">
+        <div class="card-stats">
+          <span class="stat-badge">10–12 сентября 2022</span>
+        </div>
+        <h3 class="card-title">Технологический саммит</h3>
+        <p>Обсуждение будущего технологий с лидерами IT-индустрии.</p>
+        <a href="#" class="card-link">Подробнее →</a>
+      </article>
+  
+      <article class="card" data-year="2022">
+        <img src="/img/event-marketing.jpg" alt="Цифровой маркетинг">
+        <div class="card-stats">
+          <span class="stat-badge">5–7 апреля 2022</span>
+        </div>
+        <h3 class="card-title">Конференция по цифровому маркетингу</h3>
+        <p>Лучшие практики и тренды в области цифрового маркетинга.</p>
+        <a href="#" class="card-link">Подробнее →</a>
+      </article>
+  
+      <article class="card" data-year="2021">
+        <img src="/img/event-business.jpg" alt="Форум предпринимателей">
+        <div class="card-stats">
+          <span class="stat-badge">15–17 ноября 2021</span>
+        </div>
+        <h3 class="card-title">Форум предпринимателей</h3>
+        <p>Крупнейшее мероприятие для малого и среднего бизнеса.</p>
+        <a href="#" class="card-link">Подробнее →</a>
+      </article>
+    </div>
+  </div>
+            </div>
+          </section>                 
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h2 class="footer-title">ФОНД "АСТАНА"</h2>
+                    <p class="footer-description">Фонд содействия развитию дружбы народов и национальных культур "Астана"</p>
+                    
+                    <div class="footer-partners">
+                        <h3 class="footer-subtitle">Партнеры:</h3>
+                        <p>МИНИСТЕРСТВО КУЛЬТУРЫ<br>РОССИЙСКОЙ ФЕДЕРАЦИИ</p>
+                    </div>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h3 class="footer-subtitle">КОНТАКТЫ</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> 105264, г. Москва, ул. 11-я Парковая, д. 41, к. 2, кв. 14</li>
+                        <li><i class="fas fa-phone"></i> +7 (444) 444-44-44</li>
+                        <li><i class="fas fa-envelope"></i> info@rfculture.ru</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 class="footer-subtitle">ФОНД В СОЦСЕТЯХ</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="What's app">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="feedback-section">
+                        <button class="feedback-button">
+                            <i class="fas fa-envelope"></i> Обратная связь
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© Фонд Астана 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>  
+    <script src="event.js" defer></script>
+</body>
+</html>
