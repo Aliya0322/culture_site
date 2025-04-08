@@ -119,7 +119,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
     flex-wrap: wrap;
 }
 
@@ -128,7 +127,7 @@ body {
     font-size: 32px;
     font-weight: 700;
     margin: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .archive-link:hover {
