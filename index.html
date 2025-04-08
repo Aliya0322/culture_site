@@ -24,11 +24,19 @@
                         </div>
                     </div>
                     <div class="social-buttons">
-                        <a href="#" class="search-button"><i class="fas fa-search"></i></a>
+                        <div class="search-wrapper">
+                            <a href="#" class="search-button"><i class="fas fa-search"></i></a>
+                            
+                            <div class="search-container" id="search-container">
+                                <input type="text" id="search-input" placeholder="Поиск по сайту..." />
+                            </div>
+                        </div>
+                    
                         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    
                         <div class="menu-icon" id="menu-icon">
                             <i class="fa-solid fa-bars"></i>
-                        </div>                    
+                        </div>
                     </div>
                 </div>
                 <nav class="nav" id="nav-links">
@@ -246,5 +254,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="slider.js" defer></script>
   <script src="menu.js" defer></script>
+  <script src="search.js" defer></script>
 </body>
 </html>
