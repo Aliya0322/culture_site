@@ -40,10 +40,15 @@ body {
     margin-right: 10px;
     border-radius: 10px;
 }
-.logo-text {
+.desktop-logo-text {
+    display: block;
     font-size: 24px;
     font-weight: bold;
 }
+.mobile-logo-text {
+    display: none;
+}
+
 .logo-link {
     display: flex;
     align-items: center;
@@ -646,10 +651,14 @@ body {
         border-radius: 10px;
     }
 
-    .logo-text {
+    .desktop-logo-text {
         font-size: 16px;
         line-height: 1.3;
     }
+
+    .mobile-logo-text {
+        display: none;
+      }
 
     .nav {
         display: none;
@@ -806,12 +815,17 @@ body {
 
     /* Уменьшаем шрифты и размеры изображений в логотипе */
     .logo-box img {
-        height: 4rem;
+        height: 5rem;
         margin-right: 5px;
     }
+    .desktop-logo-text {
+        display: none;
+      }
 
-    .logo-text {
-        font-size: 12px;
+    .mobile-logo-text {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
     }
 
     /* Улучшения для меню */
