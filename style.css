@@ -615,6 +615,9 @@ body {
 
 
 @media (max-width: 768px) {
+    .frame-box {
+        border: 8px solid #f5f6f6;
+    }
     .header {
         position: relative;
         padding: 10px 15px;
@@ -691,6 +694,9 @@ body {
         font-size: 12px;
     }
     
+    .slider-section {
+        padding: 5px;
+    }
 
     .section-header {
         flex-direction: column;
