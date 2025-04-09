@@ -815,9 +815,13 @@ body {
     }
 
     /* Слайдер */
+    .slide-content img {
+        display: none;
+      }
     .slide-text {
-        font-size: 10px;
-        line-height: 1.4;
+        width: 100%;
+        font-size: 14px;
+        padding: 20px;
     }
 
     .slide-date {
@@ -884,7 +888,7 @@ body {
 
     /* Кнопка обратной связи */
     .feedback-button {
-        width: 50%;
+        width: 70%;
         font-size: 14px;
         padding: 10px 12px;
     }
