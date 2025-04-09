@@ -793,77 +793,110 @@ body {
 
 @media (max-width: 480px) {
 
+    /* Уточняем паддинги и отступы */
+    .container {
+        padding: 0 10px;
+    }
+
+    /* Уменьшаем шрифты и размеры изображений в логотипе */
+    .logo-box img {
+        height: 4rem;
+        margin-right: 5px;
+    }
+
     .logo-text {
+        font-size: 12px;
+    }
+
+    /* Улучшения для меню */
+    .nav a {
         font-size: 14px;
-        line-height: 1.3;
+        padding: 10px;
     }
 
-
-    .social-buttons a {
-        width: 40px;
-        height: 40px;
-    }
-
-    .menu-icon {
-        font-size: 2.4rem;
-    }
-
-    .frame-box {
-        padding: 15px 0;
-    }
-    .slide-text, .slide-content img {
-        width: 60%;
-        height: auto;
-        border-radius: 10px;
-        font-size: 10px;
-    }
-
+    /* Слайдер */
     .slide-text {
-        padding: 5px;
-
+        font-size: 10px;
+        line-height: 1.4;
     }
 
-    .slide-content {
-        gap: 0.3rem;
+    .slide-date {
+        font-size: 10px;
+        padding: 3px 6px;
+        margin-bottom: 5px;
     }
 
-    .card img {
-        max-height: 150px;
-        max-width: 250px;
+    /* Блок "О нас / Миссия" */
+    .about-card__title,
+    .mission-card__title {
+        font-size: 24px;
+        margin-bottom: 15px;
     }
 
-    .card {
-        padding: 20px;
+    .about-card__content p,
+    .mission-card__content p {
+        font-size: 14px;
+        line-height: 1.6;
     }
+
+    /* Карточки событий */
     .card-title {
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    .card-content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+    .card-date {
+        font-size: 14px;
     }
 
-    
+    .card-link {
+        font-size: 14px;
+    }
+
+    /* Заголовки секций */
+    .section-title,
+    .events-calendar .section-title,
+    .sponsors-tittle {
+        font-size: 24px;
+        text-align: center;
+    }
+
     .archive-link {
         font-size: 16px;
     }
 
-    .swiper {
-        height: 200px;
+    /* Footer */
+    .footer-title {
+        font-size: 18px;
     }
-    .footer-content {
-        grid-template-columns: 1fr;
+
+    .footer-subtitle {
+        font-size: 16px;
+    }
+
+    .contact-list li {
+        font-size: 14px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Кнопка обратной связи */
+    .feedback-button {
+        width: 50%;
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    /* Кнопки соцсетей */
+    .social-links {
+        flex-wrap: wrap;
     }
 
     .social-link {
-        width: 50px;
-        height: 50px;
-    }
-
-    .feedback-button {
-        padding: 12px 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
 }
