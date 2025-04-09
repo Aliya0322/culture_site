@@ -689,7 +689,7 @@ body {
         gap: 15px;
         position: relative;
     }
-    
+
     .swiper {
         height: 220px;
     }
@@ -849,6 +849,32 @@ body {
         padding: 3px 6px;
         margin-bottom: 5px;
     }
+
+    .social-buttons {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    
+      .search-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+    
+      .search-wrapper.active .search-container {
+        display: block;
+      }
+    
+      #search-input {
+        width: 100%;
+        max-width: 180px;
+        font-size: 14px;
+      }
+    
+      .whatsapp-button.hidden {
+        display: none;
+      }
 
     /* Блок "О нас / Миссия" */
     .about-card__title,
