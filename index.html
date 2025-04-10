@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Astana Fund Web site</title>
 </head>
@@ -59,45 +58,25 @@
                     <a href="/about.html">О ФОНДЕ</a>
                     <a href="/event.html">МЕРОПРИЯТИЯ</a>
                     <a href="/media.html">СМИ О НАС</a>
-                    <a href="#">ПРЕСС-СЛУЖБА</a>
+                    <a href="#">ПАРТНЕРЫ</a>
+                    <a href="#">НАШИ ПРОЕКТЫ</a>
                     <a href="#contacts">КОНТАКТЫ</a>
                 </nav>
             </div>
         </header>
-        <section class="slider-section">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <img src="/img/slider1.jpeg" alt="Слайд 1">
-                            <div class="slide-text">
-                                <span class="slide-date">09 МАЯ 2025</span>
-                                <h2>80-ая годовщина завершения Великой Отечественной войны</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <img src="/img/slide2.jpg" alt="Слайд 1">
-                            <div class="slide-text">
-                                <span class="slide-date">02 МАРТА 2025</span>
-                                <h2>В Москве прошел праздник казахской культуры Шежіре</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <img src="/img/slide3.jpg" alt="Слайд 2">
-                            <div class="slide-text">
-                                <span class="slide-date">15 МАРТА 2025</span>
-                                <h2>Фестиваль национальных культур в парке Горького</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Дополнительные слайды -->
-                </div>
-                <div class="swiper-pagination"></div>
+        <section class="video-section">
+            <div class="container">
+            <div class="video-container">
+                <video autoplay muted loop playsinline>
+                    <source src="/img/astana.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео тег.
+                </video>
+                <!-- <div class="video-overlay">
+                    <h2>Фонд "Астана" - мост между культурами</h2>
+                    <p>Содействуем развитию дружбы народов и национальных культур</p>
+                </div> -->
             </div>
+        </div>
         </section>
         <section class="about-mission">
             <div class="container">
@@ -118,6 +97,19 @@
                     </article>
                 </div>
             </div>
+        </section>
+        <section class="volunteer-section">
+            <div class="container">
+                <div class="volunteer-card">
+                    <img src="/img/volunteer.jpg" alt="Волонтерство" class="volunteer-image">
+                    <div class="volunteer-content">
+                        <a href="#volunteer-form" class="volunteer-btn">
+                            <i class="fas fa-hands-helping"></i> Стать волонтером
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         </section>
         <section class="events-calendar">
             <div class="container">
@@ -267,8 +259,6 @@
             </div>
         </footer>     
     </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="slider.js" defer></script>
   <script src="menu.js" defer></script>
   <script src="search.js" defer></script>
 </body>
