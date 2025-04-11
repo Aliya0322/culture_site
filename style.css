@@ -281,52 +281,87 @@ html {
 }
 
 
-/* Стили для секции волонтерства */
+/* Секция волонтерства */
 .volunteer-section {
-    padding: 40px 0;
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+    color: #fff;
 }
 
-.volunteer-card {
+.container {
     position: relative;
-    border-radius: 8px;
-    overflow: hidden;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
-.volunteer-image {
+.volunteer-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: block;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.volunteer-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    gap: 50px;
+}
+
+.volunteer-image-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+}
+
+.volunteer-image-circle img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.volunteer-content {
-    position: absolute;
-    bottom: 7rem;
-    left: 0;
-    right: 17rem;
-    text-align:end;
+.volunteer-text {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.volunteer-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
 .volunteer-btn {
-    padding: 12px 24px;
+    display: inline-block;
+    padding: 15px 35px;
     background-color: #ff5722;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
     border-radius: 50px;
     transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
 }
 
 .volunteer-btn:hover {
     background-color: #e64a19;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
