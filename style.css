@@ -1,13 +1,48 @@
+@font-face {
+    font-family: 'QazFont';
+    src: url('fonts/Qaz-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: QazFont;
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
+/* ================= ОБЩИЕ СТИЛИ ЗАГОЛОВКОВ ================= */
+.section-title,
+.sponsors-tittle,
+.about-card__title, 
+.mission-card__title,
+.events-calendar .section-title,
+.footer-title,
+.footer-subtitle {
+    font-family: 'QazFont', sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #00ABC2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    line-height: 1.3;
+}
+
+.section-title,
+.sponsors-tittle,
+.about-card__title,
+.mission-card__title {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    padding-bottom: 15px;
+}
+
+/* ================= ОСНОВНЫЕ СТИЛИ ================= */
 .frame-box {
     height: auto;
     background: #fff;
@@ -18,6 +53,7 @@ html {
 .header {
     background: #fff;
 }
+
 .header-top {
     display: flex;
     align-items: flex-start;
@@ -38,16 +74,19 @@ html {
     display: flex;
     align-items: flex-start;
 }
+
 .logo-box img {
     height: 6rem;
     margin-right: 10px;
     border-radius: 10px;
 }
+
 .desktop-logo-text {
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
+
 .mobile-logo-text {
     display: none;
 }
@@ -58,12 +97,12 @@ html {
     gap: 1rem;
     text-decoration: none;
     color: inherit;
-  }
-  
-  .logo-link:hover {
+}
+
+.logo-link:hover {
     text-decoration: none;
-  }
-  
+}
+
 .social-buttons {
     display: flex;
     align-items: flex-start;
@@ -71,9 +110,10 @@ html {
     gap: 10px;
 }
 
-.social-buttons a:hover{
+.social-buttons a:hover {
     background: #659dbd;
 }
+
 .social-buttons a {
     display: flex;
     justify-content: center;
@@ -105,10 +145,7 @@ html {
     color: #333;
 }
 
-
-
-/* Окно поиска */
-
+/* ================= ОКНО ПОИСКА ================= */
 .search-wrapper {
     position: relative;
     display: inline-block;
@@ -120,11 +157,9 @@ html {
     top: 50%;
     transform: translateY(-50%) scale(0.95);
     margin-right: 10px;
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
@@ -144,12 +179,12 @@ html {
     pointer-events: auto;
 }
 
+/* ================= СЛАЙДЕР ================= */
 .slider-section {
     padding: 0 30px;
     margin: 3rem auto 0;
     max-width: 1200px;
 }
-
 
 .swiper {
     width: 100%;
@@ -207,8 +242,7 @@ html {
     opacity: 1;
 }
 
-/* Видео секция */
-/* Видео секция */
+/* ================= ВИДЕО СЕКЦИЯ ================= */
 .video-section {
     padding: 30px 0;
     width: 100%;
@@ -216,7 +250,7 @@ html {
 }
 
 .video-wrapper {
-    width: 100%; /* Уменьшаем ширину контейнера */
+    width: 100%;
     margin: 1rem auto;
     border-radius: 10px;
     overflow: hidden;
@@ -226,7 +260,7 @@ html {
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 40%; /* Уменьшенное соотношение сторон (вместо 56.25%) */
+    padding-bottom: 40%;
 }
 
 .video-container video {
@@ -234,7 +268,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Убираем 70%, используем 100% */
+    height: 100%;
     object-fit: cover;
 }
 
@@ -243,7 +277,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Убираем 70%, используем 100% */
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,13 +286,17 @@ html {
 
 .overlay-content {
     width: 90%;
-    max-width: 800px;
     padding: 20px;
     text-align: center;
     color: white;
 }
 
-/* Стили для кнопки пожертвования */
+.overlay-content h2 {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
 .donate-btn {
     display: inline-block;
     margin-top: 20px;
@@ -280,8 +318,7 @@ html {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-
-/* Секция волонтерства */
+/* ================= СЕКЦИЯ ВОЛОНТЕРСТВА ================= */
 .volunteer-section {
     position: relative;
     padding: 80px 0;
@@ -291,7 +328,6 @@ html {
     height: 350px;
 }
 
-/* Фоновая подложка, ограниченная контейнером */
 .volunteer-section::before {
     content: '';
     position: absolute;
@@ -299,17 +335,16 @@ html {
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    max-width: 1200px; /* Совпадает с max-width контейнера */
+    max-width: 1200px;
     height: 100%;
     background-color: #3db3df;
     z-index: 0;
 }
 
-/* Контейнер для узора */
 .volunteer-pattern {
     position: absolute;
-    top: -30px; /* Половина узора выходит за верхнюю границу */
-    left: calc(50% - 600px); /* Привязка к левому краю контейнера */
+    top: -30px;
+    left: calc(50% - 600px);
     width: 550px;
     height: auto;
     z-index: 2;
@@ -332,7 +367,25 @@ html {
     border-radius: 10px;
 }
 
-/* Остальные стили остаются без изменений */
+.volunteer-text h2 {
+    font-size: 2.8rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.volunteer-text h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(255,255,255,0.5);
+}
+
 .volunteer-image-circle {
     width: 350px;
     height: 350px;
@@ -383,21 +436,8 @@ html {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 768px) {
-    .volunteer-section {
-        padding: 20px 0;
-    }
-    
-    .volunteer-content {
-        bottom: 20px;
-    }
-    
-    .volunteer-btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-}
 
+/* ================= СПОНСОРЫ ================= */
 .sponsors {
     background-color: #fff;
     margin-top: 1rem;
@@ -412,11 +452,40 @@ html {
 }
 
 .sponsors-tittle {
-    color: #00ABC2;
-    font-size: 32px;
-    margin-bottom: 25px;
-    font-weight: 700;
-    margin-bottom: 3rem;
+    display: block;
+    width: 100%;
+}
+
+.sponsors-logos {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contract-link {
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.contract-link:hover {
+    text-decoration: underline;
+}
+
+
+.sponsors-tittle:after {
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .sponsors p a {
@@ -440,10 +509,10 @@ html {
     height: 80px;
 }
 
+/* ================= О НАС / МИССИЯ ================= */
 .about-mission {
     background-color: #ffffff;
     padding: 80px 0;
-    font-family: 'Arial', sans-serif;
 }
 
 .container {
@@ -463,13 +532,6 @@ html {
     border-radius: 12px;
     padding: 40px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
-
-.about-card__title, .mission-card__title {
-    color: #00ABC2;
-    font-size: 32px;
-    margin-bottom: 25px;
-    font-weight: 700;
 }
 
 .about-card__content p, .mission-card__content p {
@@ -493,49 +555,40 @@ html {
     transform: translateX(5px);
 }
 
+/* ================= КАЛЕНДАРЬ СОБЫТИЙ ================= */
 .events-calendar {
     background-color: #EAE7DC;
     padding: 80px 0;
-    font-family: 'Arial', sans-serif;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 .events-calendar .section-title {
-    color: #00ABC2;
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 3rem;
+    display: block;
+    width: 100%;
 }
 
+.events-calendar .section-title:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .past-events .stat-badge {
-        background: #8e8d8a;
-        color: #fff;
-        padding: 8px 15px;
-        border-radius: 5px;
-        font-weight: bold;
-        font-size: 14px;
-    }
+    background: #8e8d8a;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
 
 .past-events {
     background-color: #ffffff;
     padding: 80px 0;
-    font-family: 'Arial', sans-serif;
 }
-.past-events .card-link{
+
+.past-events .card-link {
     color: #8e8d8a;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 /* Стили заголовка и ссылки архива */
@@ -547,15 +600,8 @@ html {
     flex-wrap: wrap;
 }
 
-.section-title {
-    color: #8e8d8a;
-    font-size: 32px;
-    font-weight: 700;
-    margin: 0;
-}
-
 .archive-link {
-    color: #00ABC2;;
+    color: #00ABC2;
     font-weight: 600;
     text-decoration: none;
     font-size: 28px;
@@ -620,15 +666,6 @@ html {
     font-size: 14px;
 }
 
-/* Стили заголовка карточки */
-.card-title {
-    color: #333333;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 1.4;
-    flex-grow: 1;
-}
-
 /* Стили даты мероприятия */
 .card-date {
     color: #666;
@@ -655,7 +692,6 @@ html {
     font-size: 16px;
 }
 
-/* Стили ссылки на фотоотчёт */
 .card-link {
     display: inline-block;
     color: #00ABC2;
@@ -671,8 +707,7 @@ html {
     transform: translateX(5px);
 }
 
-/* Общие стили футера */
-
+/* ================= ФУТЕР ================= */
 .site-footer {
     background-color: #f5f5f5;
     color: #333;
@@ -690,29 +725,27 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    margin-bottom: 1rem;
 }
 
-/* Стили заголовков */
 .footer-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #000;
-    font-weight: 700;
+    font-size: 18px;
+    color: black;
     text-transform: uppercase;
 }
+
 
 .footer-subtitle {
     font-size: 18px;
-    margin-bottom: 15px;
-    color: #000;
+    color: #333;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 /* Основной блок */
 .footer-description {
-    margin-bottom: 25px;
     line-height: 1.5;
+    margin-bottom: 25px;
+
 }
 
 .footer-partners p {
@@ -812,13 +845,12 @@ html {
     font-size: 14px;
 }
 
-/* Адаптивность */
-
-
+/* ================= АДАПТИВНОСТЬ ================= */
 @media (max-width: 768px) {
     .frame-box {
         border: 8px solid #f5f6f6;
     }
+    
     .header {
         position: relative;
         padding: 10px 15px;
@@ -828,6 +860,7 @@ html {
         display: flex;
         gap: 10px;
     }
+    
     .menu-icon {
         display: block;
     }
@@ -842,6 +875,7 @@ html {
         gap: 10px;
         width: 100%;
     }
+    
     .logo-box img {
         height: 5rem;
         border-radius: 10px;
@@ -855,7 +889,7 @@ html {
 
     .mobile-logo-text {
         display: none;
-      }
+    }
 
     .nav {
         display: none;
@@ -886,6 +920,7 @@ html {
         gap: 15px;
         position: relative;
     }
+    
     .donate-btn {
         padding: 10px 25px;
         font-size: 0.9rem;
@@ -895,9 +930,11 @@ html {
     .swiper {
         height: 220px;
     }
+    
     .slide-content {
         gap: 0.5rem;
     }
+    
     .slide-text, .slide-content img {
         width: 60%;
         height: auto;
@@ -915,8 +952,11 @@ html {
         gap: 15px;
     }
 
-    .section-title {
-        color: #8e8d8a;
+    .section-title,
+    .sponsors-tittle,
+    .about-card__title,
+    .mission-card__title,
+    .events-calendar .section-title {
         font-size: 28px;
         font-weight: 600;
         margin: 0;
@@ -934,9 +974,9 @@ html {
     .archive-link {
         margin-left: 0;
         text-align: center;
+        font-size: 1.2rem;
     }
 
-        
     .cards-grid {
         grid-template-columns: 1fr;
         padding: 0 15px;
@@ -957,17 +997,6 @@ html {
         font-size: 20px;
     }
 
-    .card-link {
-        margin-top: auto; 
-    }
-
-    .events-calendar .section-title {
-        font-size: 28px;
-        font-weight: 600;
-        margin-bottom: 3rem;
-        text-align: center;
-    }
-
     .footer-content {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -980,25 +1009,11 @@ html {
     }
 
     .footer-title {
-        font-size: 20px;
-        font-weight: 600;
-    
-    }
-
-    .footer-subtitle {
-        font-size: 18px;
+        font-size: 1.5rem;
     }
 
     .social-links {
         justify-content: flex-start;
-    }
-
-    .sponsors-tittle {
-        font-size: 28px;
-        margin-bottom: 25px;
-        font-weight: 600;
-        margin-bottom: 3rem;
-        text-align: center;
     }
 
     .feedback-button {
@@ -1006,23 +1021,64 @@ html {
         justify-content: center;
         margin-bottom: 2rem;
     }
+    
+    /* Волонтерская секция */
+    .volunteer-section {
+        padding: 20px 0;
+        height: auto;
+    }
+    
+    .volunteer-content {
+        gap: 2rem;
+        min-height: auto;
+    }
+    
+    .volunteer-image-circle {
+        width: 250px;
+        height: 250px;
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .volunteer-pattern {
+        position: absolute;
+        top: -40px;
+        width: 400px;
+        left: calc(75% - 600px);
+    }
+    
+    .volunteer-text {
+        margin-right: 0;
+        padding: 20px;
+    }
+    
+    .volunteer-text h2 {
+        font-size: 2rem;
+    }
+    
+    .volunteer-text p {
+        font-size: 1.2rem;
+    }
+    
+    .volunteer-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
-
-    /* Уточняем паддинги и отступы */
     .container {
         padding: 0 10px;
     }
 
-    /* Уменьшаем шрифты и размеры изображений в логотипе */
     .logo-box img {
         height: 5rem;
         margin-right: 5px;
     }
+    
     .desktop-logo-text {
         display: none;
-      }
+    }
 
     .mobile-logo-text {
         display: block;
@@ -1030,19 +1086,20 @@ html {
         font-weight: bold;
     }
 
-    /* Улучшения для меню */
     .nav a {
         font-size: 14px;
         padding: 10px;
     }
+    
     .donate-btn {
         padding: 8px 20px;
         font-size: 0.8rem;
     }
-    /* Слайдер */
+    
     .slide-content img {
         display: none;
-      }
+    }
+    
     .slide-text {
         width: 100%;
         font-size: 14px;
@@ -1059,32 +1116,31 @@ html {
         display: flex;
         align-items: center;
         gap: 8px;
-      }
+    }
     
-      .search-wrapper {
+    .search-wrapper {
         display: flex;
         align-items: center;
         gap: 6px;
-      }
+    }
     
-      .search-wrapper.active .search-container {
+    .search-wrapper.active .search-container {
         display: block;
-      }
+    }
     
-      #search-input {
+    #search-input {
         width: 100%;
         max-width: 180px;
         font-size: 14px;
-      }
+    }
     
-      .whatsapp-button.hidden {
+    .whatsapp-button.hidden {
         display: none;
-      }
+    }
 
-    /* Блок "О нас / Миссия" */
     .about-card__title,
     .mission-card__title {
-        font-size: 24px;
+        font-size: 1.6rem;
         margin-bottom: 15px;
     }
 
@@ -1094,9 +1150,8 @@ html {
         line-height: 1.6;
     }
 
-    /* Карточки событий */
-    .card-title {
-        font-size: 16px;
+    .about-mission {
+        padding: 30px 0;
     }
 
     .card-date {
@@ -1107,29 +1162,14 @@ html {
         font-size: 14px;
     }
 
-    /* Заголовки секций */
     .section-title,
     .events-calendar .section-title,
     .sponsors-tittle {
-        font-size: 24px;
-        text-align: center;
+        font-size: 1.6rem;
     }
 
     .archive-link {
-        font-size: 16px;
-    }
-
-    /* Footer */
-    .footer-title {
-        font-size: 18px;
-    }
-
-    .footer-subtitle {
-        font-size: 16px;
-    }
-
-    .contact-list li {
-        font-size: 14px;
+        font-size: 1.2rem;
     }
 
     .copyright {
@@ -1137,21 +1177,71 @@ html {
         text-align: center;
     }
 
-    /* Кнопка обратной связи */
     .feedback-button {
         width: 70%;
         font-size: 14px;
         padding: 10px 12px;
     }
 
-    /* Кнопки соцсетей */
-    .social-links {
-        flex-wrap: wrap;
-    }
-
     .social-link {
         width: 50px;
         height: 50px;
         font-size: 18px;
+    }
+    
+    /* Видео секция */
+    .overlay-content h2 {
+        font-size: 16px;
+    }
+
+    .overlay-content p {
+        font-size: 14px;
+    }
+
+    .donate-btn {
+        font-size: 14px;
+    }
+    
+    /* Карточки событий */
+    .card-title {
+        font-size: 1rem;
+    }
+
+    /* Волонтерская секция */
+    .volunteer-content {
+        gap: 1rem;
+        min-height: auto;
+    }
+    
+    .volunteer-image-circle {
+        width: 150px;
+        height: 150px;
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .volunteer-pattern {
+        position: absolute;
+        top: -50px;
+        width: 400px;
+        left: calc(100% - 600px);
+    }
+    
+    .volunteer-text {
+        margin-right: 0;
+        padding: 20px;
+    }
+    
+    .volunteer-text h2 {
+        font-size: 1rem;
+    }
+    
+    .volunteer-text p {
+        font-size: 1rem;
+    }
+    
+    .volunteer-btn {
+        padding: 10px 15px;
+        font-size: 14px;
     }
 }
