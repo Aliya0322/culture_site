@@ -75,28 +75,37 @@ html {
     align-items: flex-start;
 }
 
-.logo-box img {
-    height: 6rem;
-    margin-right: 10px;
-    border-radius: 10px;
-}
-
-.desktop-logo-text {
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.mobile-logo-text {
-    display: none;
-}
-
 .logo-link {
     display: flex;
     align-items: center;
     gap: 1rem;
     text-decoration: none;
     color: inherit;
+}
+
+.logo-box img {
+    height: clamp(3rem, 8vw, 6rem); /* Адаптивная высота изображения */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.desktop-logo-text {
+    display: block;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    
+    /* Адаптивный размер шрифта */
+    font-size: clamp(16px, 2.5vw, 24px);
+    
+    /* Плавное изменение line-height */
+    line-height: clamp(1.2, 1.5vw, 1.5);
+}
+
+.mobile-logo-text {
+    display: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: clamp(14px, 2vw, 18px);
 }
 
 .logo-link:hover {
@@ -871,9 +880,7 @@ html {
     }
 
     .logo-box {
-        margin-top: 2rem;
-        gap: 10px;
-        width: 100%;
+        align-items: flex-start;
     }
     
     .logo-box img {
@@ -882,7 +889,7 @@ html {
     }
 
     .desktop-logo-text {
-        font-size: 20px;
+        font-size: 24px;
         line-height: 1.3;
         display: block;
     }
@@ -920,6 +927,7 @@ html {
         gap: 15px;
         position: relative;
     }
+
     
     .donate-btn {
         padding: 10px 25px;
@@ -1034,8 +1042,8 @@ html {
     }
     
     .volunteer-image-circle {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         margin-left: 0;
         margin-bottom: 2rem;
     }
@@ -1064,6 +1072,33 @@ html {
         padding: 12px 25px;
         font-size: 1rem;
     }
+
+    /* Видео секция */
+    .video-section {
+        padding: 20px 0;
+    }
+    
+    .video-container {
+        padding-bottom: 56.25%; /* 16:9 соотношение */
+    }
+    
+    .overlay-content {
+        padding: 15px;
+    }
+
+    /* Секция спонсоров */
+    .sponsors .container {
+        padding: 20px;
+    }
+
+    .sponsors-logos {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .sponsor {
+        flex: 0 0 calc(50% - 20px);
+    }
 }
 
 @media (max-width: 480px) {
@@ -1082,7 +1117,7 @@ html {
 
     .mobile-logo-text {
         display: block;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
     }
 
