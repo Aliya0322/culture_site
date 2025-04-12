@@ -95,7 +95,7 @@ html {
     transition: all 0.3s ease;
     
     /* Адаптивный размер шрифта */
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: clamp(14px, 2.5vw, 24px);
     
     /* Плавное изменение line-height */
     line-height: clamp(1.2, 1.5vw, 1.5);
@@ -1032,46 +1032,39 @@ html {
     
     /* Волонтерская секция */
     .volunteer-section {
-        padding: 20px 0;
-        height: auto;
-    }
-    
-    .volunteer-content {
+        padding: 60px 0;
+      }
+      
+      .volunteer-content {
+        flex-direction: column;
+        align-items: center;
         gap: 2rem;
-        min-height: auto;
-    }
-    
-    .volunteer-image-circle {
-        width: 200px;
-        height: 200px;
-        margin-left: 0;
+        text-align: center;
+      }
+      
+      .volunteer-image-circle {
+        width: 250px;
+        height: 250px;
         margin-bottom: 2rem;
-    }
-
-    .volunteer-pattern {
-        position: absolute;
-        top: -40px;
-        width: 400px;
-        left: calc(75% - 600px);
-    }
-    
-    .volunteer-text {
-        margin-right: 0;
-        padding: 20px;
-    }
-    
-    .volunteer-text h2 {
-        font-size: 2rem;
-    }
-    
-    .volunteer-text p {
-        font-size: 1.2rem;
-    }
-    
-    .volunteer-btn {
+      }
+      
+      .volunteer-text {
+        padding: 25px;
+      }
+      
+      .volunteer-text h2 {
+        font-size: 1.8rem;
+      }
+      
+      .volunteer-text h2:after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      .volunteer-btn {
         padding: 12px 25px;
         font-size: 1rem;
-    }
+      }
 
     /* Видео секция */
     .video-section {
@@ -1117,7 +1110,7 @@ html {
 
     .mobile-logo-text {
         display: block;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: bold;
     }
 
@@ -1225,6 +1218,13 @@ html {
     }
     
     /* Видео секция */
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 40%;
+    }
+
     .overlay-content h2 {
         font-size: 16px;
     }
