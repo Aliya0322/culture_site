@@ -6,8 +6,10 @@
 }
 
 body {
+    background-color: #f4f1ea;  /* Спокойный, нейтральный фон */
+    color: #333;
     margin: 0;
-    font-family: QazFont;
+    font-family: 'Arial', sans-serif;
     box-sizing: border-box;
 }
 
@@ -22,12 +24,13 @@ html {
 .mission-card__title,
 .events-calendar .section-title,
 .footer-title,
-.footer-subtitle {
+.footer-subtitle,
+.leadership-section .section-title {
     font-family: 'QazFont', sans-serif;
     position: relative;
     display: inline-block;
     margin-bottom: 1rem;
-    color: #00ABC2;
+    color: #00ABC2; 
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
     line-height: 1.3;
 }
@@ -56,7 +59,7 @@ html {
 
 .header-top {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
@@ -65,14 +68,30 @@ html {
     display: none;
     cursor: pointer;
     font-size: 2.7rem;
-    color: #3db3df;
+    color: #00ABC2;
     margin-left: 15px;
 }
 
 .logo-box {
     gap: 1rem;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.logo-box img {
+    height: 6rem;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.desktop-logo-text {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mobile-logo-text {
+    display: none;
 }
 
 .logo-link {
@@ -83,44 +102,20 @@ html {
     color: inherit;
 }
 
-.logo-box img {
-    height: clamp(3rem, 8vw, 6rem); /* Адаптивная высота изображения */
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.desktop-logo-text {
-    display: block;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    
-    /* Адаптивный размер шрифта */
-    font-size: clamp(14px, 2.5vw, 24px);
-    
-    /* Плавное изменение line-height */
-    line-height: clamp(1.2, 1.5vw, 1.5);
-}
-
-.mobile-logo-text {
-    display: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    font-size: clamp(14px, 2vw, 18px);
-}
-
 .logo-link:hover {
     text-decoration: none;
 }
 
 .social-buttons {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     cursor: pointer;
     gap: 10px;
 }
 
 .social-buttons a:hover {
-    background: #659dbd;
+    background: white;
+    color: #00ABC2;
 }
 
 .social-buttons a {
@@ -129,7 +124,7 @@ html {
     align-items: center;
     width: 50px;
     height: 50px;
-    background: #3db3df;
+    background: #00ABC2;
     border-radius: 50%;
     text-decoration: none;
     color: #fff;
@@ -153,6 +148,7 @@ html {
     text-decoration: none;
     color: #333;
 }
+
 
 /* ================= ОКНО ПОИСКА ================= */
 .search-wrapper {
@@ -326,6 +322,112 @@ html {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
+/* Стили для секции о руководстве */
+.leadership-section {
+    background-color: #f9f9f9; /* Светлый фон для секции */
+    padding: 60px 0;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+
+/* Грид для карточек с руководством */
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки по умолчанию */
+    gap: 20px;
+    padding: 0 15px;
+    justify-items: center; /* Центрируем карточки по горизонтали */
+}
+
+
+/* Стили для карточки с руководителем */
+.leader-card {
+    position: relative;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leader-card img {
+    width: 150px;          /* Фиксированная ширина */
+    height: 150px;         /* Фиксированная высота */
+    border-radius: 50%;   /* Делаем круглым */
+    object-fit: cover;    /* Обеспечиваем правильное отображение */
+    margin-bottom: 15px;
+    display: block;       /* Для корректного отображения margin */
+    margin-left: auto;    /* Центрирование по горизонтали */
+    margin-right: auto;
+}
+
+.leader-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.leader-card h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.leader-card p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.decorative-element {
+    position: absolute;
+    top: -50px; /* Элемент выходит из верхней части карточки */
+    right: -30px; /* Элемент выходит из правой стороны */
+    width: 40px; /* Размер элемента декора */
+    height: 40px;
+    z-index: 10;
+    box-shadow: none; /* Убедитесь, что элемент декора будет поверх других элементов */
+}
+
+
+/* Стили для контактной информации */
+.contact-info {
+    margin-top: 10px;
+    font-size: 0.5rem;
+    color: #333;
+}
+
+.contact-info a {
+    color: #00ABC2;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.contact-info a:hover {
+    color: #659dbd;
+}
+
+/* Стили для номера телефона */
+.leader-phone {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Стили для электронной почты */
+.leader-email {
+    display: block;
+}
+
+/* Эффект при наведении на карточку */
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 /* ================= СЕКЦИЯ ВОЛОНТЕРСТВА ================= */
 .volunteer-section {
@@ -613,7 +715,7 @@ html {
     color: #00ABC2;
     font-weight: 600;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 20px;
     transition: color 0.3s;
     white-space: nowrap;
     margin-left: 20px;
@@ -718,9 +820,10 @@ html {
 
 /* ================= ФУТЕР ================= */
 .site-footer {
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
     color: #333;
-    padding: 60px 0 30px;
+    padding: 40px 0;
+    border-top: 2px solid #ddd;
 }
 
 .site-footer .container {
@@ -731,9 +834,9 @@ html {
 
 /* Сетка футера */
 .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
     margin-bottom: 1rem;
 }
 
@@ -741,25 +844,29 @@ html {
     font-size: 18px;
     color: black;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
-
 
 .footer-subtitle {
     font-size: 18px;
     color: #333;
     font-weight: 600;
+    margin-bottom: 15px;
 }
 
 /* Основной блок */
 .footer-description {
     line-height: 1.5;
     margin-bottom: 25px;
-
 }
 
-.footer-partners p {
-    font-weight: 500;
-    line-height: 1.6;
+.privacy-policy-link {
+    color: #00ABC2;
+    text-decoration: none;
+}
+
+.privacy-policy-link:hover {
+    text-decoration: underline;
 }
 
 /* Контакты */
@@ -790,12 +897,24 @@ html {
     margin-bottom: 25px;
 }
 
+.social-links a {
+    background: #00ABC2;
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.social-links a:hover {
+    background: white;
+    color: #00ABC2;
+}
+
 .social-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: #EAE7DC;
     color: #00ABC2;
     border-radius: 50%;
@@ -825,7 +944,8 @@ html {
 }
 
 .feedback-button:hover {
-    background: #659dbd;
+    background: white;
+    color: #00ABC2;
     transform: translateY(-2px);
 }
 
@@ -840,13 +960,6 @@ html {
     align-items: center;
     padding-top: 30px;
     border-top: 1px solid #ddd;
-}
-
-.po-title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #000;
 }
 
 .copyright {
@@ -880,7 +993,9 @@ html {
     }
 
     .logo-box {
-        align-items: flex-start;
+        margin-top: 2rem;
+        gap: 10px;
+        width: 100%;
     }
     
     .logo-box img {
@@ -889,7 +1004,7 @@ html {
     }
 
     .desktop-logo-text {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.3;
         display: block;
     }
@@ -1025,7 +1140,7 @@ html {
     }
 
     .feedback-button {
-        width: 40%;
+        width: 100%;
         justify-content: center;
         margin-bottom: 2rem;
     }
@@ -1033,38 +1148,62 @@ html {
     /* Волонтерская секция */
     .volunteer-section {
         padding: 60px 0;
-      }
-      
-      .volunteer-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        text-align: center;
-      }
-      
-      .volunteer-image-circle {
-        width: 250px;
-        height: 250px;
+        height: auto;
         margin-bottom: 2rem;
-      }
-      
-      .volunteer-text {
-        padding: 25px;
-      }
-      
-      .volunteer-text h2 {
-        font-size: 1.8rem;
-      }
-      
-      .volunteer-text h2:after {
+    }
+
+    .volunteer-pattern {
+        top: -20px;
         left: 50%;
         transform: translateX(-50%);
-      }
-      
-      .volunteer-btn {
-        padding: 12px 25px;
+        width: 400px; /* Уменьшаем размер узора */
+        height: auto;
+    }
+
+    .volunteer-pattern img {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .volunteer-content {
+        flex-direction: column; /* Располагаем элементы вертикально */
+        align-items: center;
+        gap: 2rem;
+        min-height: auto;
+        padding: 0 20px;
+    }
+
+    .volunteer-image-circle {
+        width: 250px; /* Уменьшаем размер картинки */
+        height: 250px;
+        margin-left: 0;
+    }
+
+    .volunteer-image-circle img {
+        object-fit: cover;
+    }
+
+    .volunteer-text {
+        max-width: 100%;
+        padding: 20px;
+        margin-right: 0;
+    }
+
+    .volunteer-text h2 {
+        font-size: 2.2rem; /* Уменьшаем размер заголовка */
+        margin-bottom: 1.2rem;
+    }
+
+    .volunteer-text p {
+        font-size: 1.3rem; /* Уменьшаем размер текста */
+        margin-bottom: 20px;
+    }
+
+    .volunteer-btn {
+        padding: 12px 30px; /* Уменьшаем размеры кнопки */
         font-size: 1rem;
-      }
+    }
 
     /* Видео секция */
     .video-section {
@@ -1079,19 +1218,11 @@ html {
         padding: 15px;
     }
 
-    /* Секция спонсоров */
-    .sponsors .container {
-        padding: 20px;
+    .leadership-grid {
+        grid-template-columns: 1fr; /* 1 колонка на маленьких экранах */
+        justify-items: stretch; /* Чтобы карточки занимали всю ширину на мобильных устройствах */
     }
 
-    .sponsors-logos {
-        gap: 20px;
-        padding: 15px;
-    }
-
-    .sponsor {
-        flex: 0 0 calc(50% - 20px);
-    }
 }
 
 @media (max-width: 480px) {
@@ -1110,7 +1241,7 @@ html {
 
     .mobile-logo-text {
         display: block;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: bold;
     }
 
@@ -1218,13 +1349,6 @@ html {
     }
     
     /* Видео секция */
-    .video-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        padding-bottom: 40%;
-    }
-
     .overlay-content h2 {
         font-size: 16px;
     }
@@ -1243,40 +1367,35 @@ html {
     }
 
     /* Волонтерская секция */
-    .volunteer-content {
-        gap: 1rem;
-        min-height: auto;
-    }
-    
-    .volunteer-image-circle {
-        width: 150px;
-        height: 150px;
-        margin-left: 0;
-        margin-bottom: 2rem;
+    .volunteer-section {
+        padding: 40px 0;
     }
 
     .volunteer-pattern {
-        position: absolute;
-        top: -50px;
-        width: 400px;
-        left: calc(100% - 600px);
+        width: 300px; /* Еще уменьшаем размер узора для маленьких экранов */
     }
-    
-    .volunteer-text {
-        margin-right: 0;
-        padding: 20px;
+
+    .volunteer-content {
+        gap: 1.5rem;
     }
-    
+
+    .volunteer-image-circle {
+        width: 200px; /* Уменьшаем картинку еще больше */
+        height: 200px;
+    }
+
     .volunteer-text h2 {
-        font-size: 1rem;
+        font-size: 1.8rem; /* Еще меньше размер заголовка */
+        margin-bottom: 1rem;
     }
-    
+
     .volunteer-text p {
-        font-size: 1rem;
+        font-size: 1.1rem; /* Меньше размер текста */
+        margin-bottom: 15px;
     }
-    
+
     .volunteer-btn {
-        padding: 10px 15px;
-        font-size: 14px;
+        padding: 10px 25px; /* Уменьшаем кнопку для маленьких экранов */
+        font-size: 0.9rem;
     }
 }
