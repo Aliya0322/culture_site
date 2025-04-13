@@ -9,7 +9,7 @@ body {
     background-color: #f4f1ea;  /* Спокойный, нейтральный фон */
     color: #333;
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: QazFont;
     box-sizing: border-box;
 }
 
@@ -385,9 +385,9 @@ html {
 .decorative-element {
     position: absolute;
     top: -50px; /* Элемент выходит из верхней части карточки */
-    right: -30px; /* Элемент выходит из правой стороны */
-    width: 40px; /* Размер элемента декора */
-    height: 40px;
+    right: -50px; /* Элемент выходит из правой стороны */
+    width: 30px; /* Размер элемента декора */
+    height: 30px;
     z-index: 10;
     box-shadow: none; /* Убедитесь, что элемент декора будет поверх других элементов */
 }
@@ -834,10 +834,9 @@ html {
 
 /* Сетка футера */
 .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 55px;
-    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .footer-title {

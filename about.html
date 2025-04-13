@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="about-style.css">
     <title>Astana Fund Web site</title>
 </head>
@@ -37,139 +36,220 @@
                     </div>
                     <div class="social-buttons">
                         <div class="search-wrapper">
-                            <a href="#" class="search-button"><i class="fas fa-search"></i></a>
-                            
-                            <div class="search-container" id="search-container">
-                                <input type="text" id="search-input" placeholder="Поиск по сайту..." />
-                            </div>
+                          <a href="#" class="search-button" id="search-button">
+                            <i class="fas fa-search"></i>
+                          </a>
+                      
+                          <div class="search-container" id="search-container">
+                            <input type="text" id="search-input" placeholder="Поиск по сайту..." />
+                          </div>
                         </div>
-                    
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    
+                      
+                        <a href="#" class="whatsapp-button" id="whatsapp-button">
+                          <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                      
                         <div class="menu-icon" id="menu-icon">
-                            <i class="fa-solid fa-bars"></i>
+                          <i class="fa-solid fa-bars"></i>
                         </div>
-                    </div>
+                      </div>
                 </div>
                 <nav class="nav" id="nav-links">
                     <a href="/about.html">О ФОНДЕ</a>
                     <a href="/event.html">МЕРОПРИЯТИЯ</a>
                     <a href="/media.html">СМИ О НАС</a>
-                    <a href="#">ПРЕСС-СЛУЖБА</a>
-                    <a href="#">КОНТАКТЫ</a>
+                    <a href="#partners">ПАРТНЕРЫ</a>
+                    <a href="#">ПРОЕКТЫ</a>
+                    <a href="#contacts">КОНТАКТЫ</a>
                 </nav>
             </div>
         </header>
                 <!-- О ФОНДЕ - Табы -->
-                <section class="about-tabs">
-                    <div class="container">
-                        <h2 class="section-title">О фонде</h2>
-                        
-                        <div class="tabs-container">
-                            <div class="tabs-sidebar">
-                                <button class="tab-btn active" data-tab="goals">Цели</button>
-                                <button class="tab-btn" data-tab="structure">Структура фонда</button>
-                                <button class="tab-btn" data-tab="leadership">Руководство</button>
-                            </div>
-                            
-                            <div class="tabs-content">
-                                <!-- Цели -->
-                                <div class="tab-pane active" id="goals">
-                                    <h3>Фонд "Астана" ставит перед собой следующие основные цели:</h3>
-                                    <ul>
-                                        <li>Содействие развитию дружбы между народами Казахстана и России;</li>
-                                        <li>Сохранение и популяризация национальных культур;</li>
-                                        <li>Поддержка межэтнического согласия;</li>
-                                        <li>Развитие культурного обмена</li>
-                                    </ul>
-                                </div>
-                                
-                                <!-- Структура фонда -->
-                                <div class="tab-pane" id="structure">
-                                    <h3>Фонд состоит из следующих подразделений:</h3>
-                                    <ul>
-                                        <li><strong>Общее собрание Учредителей</strong> – высший орган управления Фонда;</li>
-                                        <li><strong>Совет</strong> - постоянно действующий коллегиальный орган управления Фонда;</li>
-                                        <li><strong>Единоличные исполнительные органы</strong>, действующие независимо друг от друга:
-                                            <ul>
-                                                <li><strong>Директор</strong> – единоличный исполнительный орган Фонда;</li>
-                                                <li><strong>Президент</strong> – единоличный исполнительный орган Фонда;</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Попечительный совет</strong> – надзорный орган Фонда.</li>
-                                    </ul>
-                                </div>
-                                
-                                <!-- Руководство -->
-                                <div class="tab-pane" id="leadership">
-                                    <h3>Руководящий состав</h3>
-                                    <div class="leadership-grid">
-                                        <div class="leader-card">
-                                            <img src="/img/leader1.jpg" alt="Президент">
-                                            <h4>Утешова Жаркын Конырбаевна</h4>
-                                            <p>Президент</p>
-                                        </div>
-                                        <div class="leader-card">
-                                            <img src="/img/leader2.jpg" alt="Директор">
-                                            <h4>Мынжасаров Рахимбай Исатаевич</h4>
-                                            <p>Директор</p>
-                                        </div>
-                                        <div class="leader-card">
-                                            <img src="/img/leader3.jpg" alt="Председатель правления">
-                                            <h4>Болховитин Роман Станиславович</h4>
-                                            <p>Председатель правления</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+<section class="about-tabs">
+    <div class="container">
+        <h2 class="section-title">О фонде</h2>
+        
+        <div class="tabs-container">
+            <!-- <img class="decorative-element" src="img/pattern_leader.png" alt="Декор"> -->
+            <div class="tabs-sidebar">
+                <button class="tab-btn active" data-tab="goals">Цели</button>
+                <button class="tab-btn" data-tab="history">История создания</button>
+                <button class="tab-btn" data-tab="team">Команда</button>
+                <button class="tab-btn" data-tab="structure">Структура фонда</button>
+                <button class="tab-btn" data-tab="leadership">Руководство</button>
+                <button class="tab-btn" data-tab="help">Как помочь</button>
+            </div>
+            
+            <div class="tabs-content">
+                <!-- Цели -->
+                <div class="tab-pane active" id="goals">
+                    <h3>Фонд "Астана" ставит перед собой следующие основные цели:</h3>
+                    <ul>
+                        <li>Содействие развитию дружбы между народами Казахстана и России;</li>
+                        <li>Сохранение и популяризация национальных культур;</li>
+                        <li>Поддержка межэтнического согласия;</li>
+                        <li>Развитие культурного обмена</li>
+                    </ul>
+                </div>
+                
+                <!-- История создания -->
+                <div class="tab-pane" id="history">
+                    <h3>История создания фонда</h3>
+                    <p>Фонд "Астана" был основан в 2010 году группой энтузиастов во главе с Жаркын Утешовой. Идея создания возникла в ответ на необходимость укрепления культурных связей между Казахстаном и Россией в период активного развития евразийской интеграции.</p>
+                    <p>Основной миссией фонда стало создание платформы для диалога между культурами, поддержка совместных образовательных и культурных проектов, а также сохранение общего исторического наследия.</p>
+                    <p>За годы работы фонд реализовал более 50 крупных проектов, включая фестивали, выставки и образовательные программы, которые получили признание на международном уровне.</p>
+                </div>
+                
+                <!-- Команда -->
+                <div class="tab-pane" id="team">
+                    <h3>Наша команда</h3>
+                    <div class="team-grid">
+                        <div class="team-card">
+                            <img src="/img/team1.jpg" alt="Координатор проектов">
+                            <h4>Алиева Айгуль Саматовна</h4>
+                            <p><strong>Координатор проектов</strong></p>
+                            <p>Опыт работы в NGO - 8 лет. Организовала более 20 международных культурных мероприятий.</p>
+                        </div>
+                        <div class="team-card">
+                            <img src="/img/team2.jpg" alt="Руководитель волонтеров">
+                            <h4>Смирнов Дмитрий Олегович</h4>
+                            <p><strong>Руководитель волонтерского направления</strong></p>
+                            <p>Координирует работу 150+ волонтеров по всей стране. Автор программ адаптации новых участников.</p>
+                        </div>
+                        <div class="team-card">
+                            <img src="/img/team3.jpg" alt="PR-менеджер">
+                            <h4>Каримова Гульнара Рашидовна</h4>
+                            <p><strong>PR-менеджер</strong></p>
+                            <p>Специалист по коммуникациям с 10-летним стажем. Курирует медиа-стратегию фонда.</p>
                         </div>
                     </div>
-                </section>
-                <footer class="site-footer">
+                </div>
+                
+                <!-- Структура фонда -->
+                <div class="tab-pane" id="structure">
+                    <h3>Фонд состоит из следующих подразделений:</h3>
+                    <ul>
+                        <li><strong>Общее собрание Учредителей</strong> – высший орган управления Фонда;</li>
+                        <li><strong>Совет</strong> - постоянно действующий коллегиальный орган управления Фонда;</li>
+                        <li><strong>Единоличные исполнительные органы</strong>, действующие независимо друг от друга:
+                            <ul>
+                                <li><strong>Директор</strong> – единоличный исполнительный орган Фонда;</li>
+                                <li><strong>Президент</strong> – единоличный исполнительный орган Фонда;</li>
+                            </ul>
+                        </li>
+                        <li><strong>Попечительный совет</strong> – надзорный орган Фонда.</li>
+                    </ul>
+                </div>
+                
+                <!-- Руководство -->
+                <div class="tab-pane" id="leadership">
+                    <h3>Руководящий состав</h3>
+                    <div class="leadership-grid">
+                        <div class="leader-card">
+                            <img src="/img/leader1.jpg" alt="Президент">
+                            <h4>Утешова Жаркын Конырбаевна</h4>
+                            <p>Президент</p>
+                        </div>
+                        <div class="leader-card">
+                            <img src="/img/leader2.jpg" alt="Директор">
+                            <h4>Мынжасаров Рахимбай Исатаевич</h4>
+                            <p>Директор</p>
+                        </div>
+                        <div class="leader-card">
+                            <img src="img/Роман Станиславович.png" alt="Председатель правления">
+                            <h4>Болховитин Роман Станиславович</h4>
+                            <p>Председатель правления</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Как помочь -->
+                <div class="tab-pane" id="help">
+                    <h3>Как вы можете помочь нашему фонду</h3>
+                    
+                    <div class="help-section">
+                        <h4>Финансовая помощь</h4>
+                        <p>Ваши пожертвования помогают реализовывать наши проекты:</p>
+                        <ul>
+                            <li><strong>Банковский перевод:</strong><br>
+                                БИК: XXXXXXXX<br>
+                                ИИК: KZXXXXXXXXXXXX<br>
+                                Банк: АО "Народный Банк Казахстана"</li>
+                            <li><strong>Онлайн-платежи:</strong><br>
+                                <a href="#" class="payment-link">Через Kaspi.kz</a><br>
+                                <a href="#" class="payment-link">Через PayPal</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="help-section">
+                        <h4>Волонтерство</h4>
+                        <p>Присоединяйтесь к нашей команде волонтеров:</p>
+                        <ol>
+                            <li>Заполните анкету на нашем сайте</li>
+                            <li>Пройдите ознакомительный вебинар</li>
+                            <li>Выберите направление работы</li>
+                            <li>Начните участвовать в проектах!</li>
+                        </ol>
+                        <a href="#" class="btn-volunteer">Стать волонтером</a>
+                    </div>
+                    
+                    <div class="help-section">
+                        <h4>Другие способы поддержки</h4>
+                        <ul>
+                            <li><strong>Вещи:</strong> принимаем книги, канцтовары, оборудование</li>
+                            <li><strong>Связи:</strong> помогите с партнерствами и информационной поддержкой</li>
+                            <li><strong>Транспорт:</strong> помощь в организации перевозок для мероприятий</li>
+                            <li><strong>Экспертиза:</strong> поделитесь профессиональными знаниями</li>
+                        </ul>
+                        <p>По всем вопросам: <a href="mailto:help@astana-fund.kz">help@astana-fund.kz</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                <footer class="site-footer" id="contacts">
                     <div class="container">
                         <div class="footer-content">
                             <div class="footer-main">
                                 <h2 class="footer-title">ФОНД "АСТАНА"</h2>
-                                <p class="footer-description">Фонд содействия развитию дружбы народов и национальных культур "Астана"</p>
-                                
-                                <div class="footer-partners">
-                                    <h3 class="footer-subtitle">Партнеры:</h3>
-                                    <p>МИНИСТЕРСТВО КУЛЬТУРЫ<br>РОССИЙСКОЙ ФЕДЕРАЦИИ</p>
-                                </div>
+                                <p class="footer-description">Фонд содействия развитию дружбы народов и<br> национальных культур "Астана"</p>
+                                <p><a href="/privacy-policy.html" class="privacy-policy-link" target="_blank">Политика обработки персональных данных</a></p>
+                                <p><a href="documents/Устав.pdf" class="privacy-policy-link" target="_blank">Учредительные документы</a></p>
                             </div>
-                            
+                
                             <div class="footer-contacts">
                                 <h3 class="footer-subtitle">КОНТАКТЫ</h3>
                                 <ul class="contact-list">
                                     <li><i class="fas fa-map-marker-alt"></i> 105264, г. Москва, ул. 11-я Парковая, д. 41, к. 2, кв. 14</li>
                                     <li><i class="fas fa-phone"></i> +7 (444) 444-44-44</li>
-                                    <li><i class="fas fa-envelope"></i> info@rfculture.ru</li>
+                                    <li><i class="fas fa-envelope"></i> info@culture.ru</li>
                                 </ul>
                             </div>
-                            
+                
                             <div class="footer-social">
                                 <h3 class="footer-subtitle">ФОНД В СОЦСЕТЯХ</h3>
                                 <div class="social-links">
-                                    <a href="#" class="social-link" aria-label="What's app">
+                                    <a href="#" class="social-link" aria-label="Whats app">
                                         <i class="fa-brands fa-whatsapp"></i>
                                     </a>
                                 </div>
-                                
+                
                                 <div class="feedback-section">
-                                    <button class="feedback-button">
+                                    <button class="feedback-button" onclick="window.location.href='/feedback.html'">
                                         <i class="fas fa-envelope"></i> Обратная связь
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        
+                
                         <div class="footer-bottom">
                             <div class="copyright">
                                 <p>© Фонд Астана 2025</p>
                             </div>
                         </div>
                     </div>
-                </footer> 
+                </footer>
         <script src="about.js" defer></script>
         <script src="menu.js" defer></script>
         <script src="search.js" defer></script>
