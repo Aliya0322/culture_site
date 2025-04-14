@@ -384,12 +384,12 @@ html {
     color: #777;
 }
 
-.decorative-element {
+.leadership-section .decorative-element {
     position: absolute;
-    top: -50px; /* Элемент выходит из верхней части карточки */
-    right: -50px; /* Элемент выходит из правой стороны */
-    width: 30px; /* Размер элемента декора */
-    height: 30px;
+    top: -30px; /* Элемент выходит из верхней части карточки */
+    right: -30px; /* Элемент выходит из правой стороны */
+    width: 100px; /* Размер элемента декора */
+    height: 100px;
     z-index: 10;
     box-shadow: none; /* Убедитесь, что элемент декора будет поверх других элементов */
 }
@@ -622,7 +622,9 @@ html {
 }
 
 .sponsors-logos img {
-    height: 80px;
+    max-width: 100%; 
+    height: auto;
+    max-height: 80px;
 }
 
 /* ================= О НАС / МИССИЯ ================= */
@@ -1357,6 +1359,10 @@ html {
     }
     
     /* Видео секция */
+    .video-container {
+        padding-bottom: 100%; /* 1:1 - квадратное соотношение */
+    }
+    
     .video-section {
         padding: 30px 0;
         height: 100%;
