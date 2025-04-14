@@ -1156,6 +1156,7 @@ html {
         padding: 60px 0;
         height: auto;
         margin-bottom: 2rem;
+        justify-content: center;
     }
 
     .volunteer-pattern {
