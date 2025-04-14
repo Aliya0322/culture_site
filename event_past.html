@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="event_second_page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="event_past.css">
     <title>Фонд Астана - Прошедшее мероприятие</title>
 </head>
 <body>
@@ -60,37 +61,94 @@
         </header>
 
         <!-- Секция информации о мероприятии -->
-        <section class="event-section">
+        <section class="past-event-section">
             <div class="container">
-                <div class="event-content">
-                    <div class="event-main">
-                        <h1 class="event-title">Фестиваль культур "Единство в многообразии"</h1>
+                <div class="past-event-header">
+                    <h1 class="section-title">Фестиваль культур "Единство в многообразии"</h1>
+                    <div class="event-meta">
+                        <span class="event-date"><i class="far fa-calendar-alt"></i> 15 апреля 2025</span>
+                        <span class="event-location"><i class="fas fa-map-marker-alt"></i> ДК "Содружество", Москва</span>
+                    </div>
+                </div>
+
+                <div class="past-event-content">
+                    <div class="event-description">
+                        <h2>О мероприятии</h2>
+                        <p>15 апреля 2025 года в Доме культуры "Содружество" состоялся грандиозный фестиваль культур "Единство в многообразии", организованный Фондом "Астана". Мероприятие собрало более 500 участников и гостей, представителей 15 национальных диаспор.</p>
                         
-                        <div class="event-meta">
-                            <span class="event-date"><i class="far fa-calendar-alt"></i> 15 апреля 2025</span>
-                            <span class="event-time"><i class="far fa-clock"></i> Начало в 18:00</span>
-                            <span class="event-location"><i class="fas fa-map-marker-alt"></i> ДК "Содружество", Москва</span>
+                        <h3>Программа мероприятия:</h3>
+                        <ul class="event-program">
+                            <li>Торжественное открытие с участием почетных гостей</li>
+                            <li>Выступления национальных творческих коллективов</li>
+                            <li>Выставка народных промыслов и ремесел</li>
+                            <li>Мастер-классы по традиционным танцам и ремеслам</li>
+                            <li>Дегустация блюд национальных кухонь</li>
+                            <li>Круглый стол по вопросам межкультурного диалога</li>
+                        </ul>
+                    </div>
+
+                    <div class="event-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>500+</h4>
+                                <p>участников и гостей</p>
+                            </div>
                         </div>
-                        
-                        <div class="event-description">
-                            <h2>О мероприятии</h2>
-                            <p>15 апреля 2025 года в Доме культуры "Содружество" состоялся грандиозный фестиваль культур "Единство в многообразии", организованный Фондом "Астана". Мероприятие собрало более 500 участников и гостей, представителей 15 национальных диаспор.</p>
-                            
-                            <h3>Программа мероприятия:</h3>
-                            <ul class="event-program">
-                                <li>Торжественное открытие с участием почетных гостей</li>
-                                <li>Выступления национальных творческих коллективов</li>
-                                <li>Выставка народных промыслов и ремесел</li>
-                                <li>Мастер-классы по традиционным танцам и ремеслам</li>
-                                <li>Дегустация блюд национальных кухонь</li>
-                                <li>Круглый стол по вопросам межкультурного диалога</li>
-                            </ul>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>15</h4>
+                                <p>национальных культур</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>30+</h4>
+                                <p>творческих номеров</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="event-poster">
-                        <img src="/img/event-poster.jpg" alt="Постер мероприятия" class="poster-image">
-                        <div class="poster-caption">Официальный постер мероприятия</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция фотоотчета -->
+        <section class="photo-report-section">
+            <div class="container">
+                <h2 class="section-title">Фотоотчет с мероприятия</h2>
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="/img/event/photo1.jpg" alt="Открытие фестиваля" class="gallery-image">
+                            
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/img/event/photo2.jpg" alt="Выступление ансамбля" class="gallery-image">
+                            
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/img/event/photo3.jpg" alt="Мастер-класс" class="gallery-image">
+                            
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/img/event/photo4.jpg" alt="Выставка" class="gallery-image">
+                            
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/img/event/photo5.jpg" alt="Дегустация" class="gallery-image">
+                            
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/img/event/photo6.jpg" alt="Круглый стол" class="gallery-image">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,5 +200,7 @@
     
     <script src="js/menu.js" defer></script>
     <script src="js/search.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="js/gallery.js" defer></script>
 </body>
 </html>

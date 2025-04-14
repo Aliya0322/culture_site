@@ -1233,6 +1233,10 @@ html {
         justify-items: stretch; /* Чтобы карточки занимали всю ширину на мобильных устройствах */
     }
 
+    .leadership-section .container {
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -1333,7 +1337,8 @@ html {
 
     .section-title,
     .events-calendar .section-title,
-    .sponsors-tittle {
+    .sponsors-tittle
+    .leadership-section .section-title {
         font-size: 1.6rem;
     }
 
@@ -1347,7 +1352,7 @@ html {
     }
 
     .feedback-button {
-        width: 50%;
+        width: 70%;
         font-size: 14px;
         padding: 10px 12px;
     }
@@ -1362,7 +1367,7 @@ html {
     .video-container {
         padding-bottom: 100%; /* 1:1 - квадратное соотношение */
     }
-    
+
     .video-section {
         padding: 30px 0;
         height: 100%;
@@ -1421,9 +1426,9 @@ html {
     .leadership-section .decorative-element {
         position: absolute;
         top: -40px; /* Элемент выходит из верхней части карточки */
-        right: -30px; /* Элемент выходит из правой стороны */
-        width: 100px; /* Размер элемента декора */
-        height: 100px;
+        right: -10px; /* Элемент выходит из правой стороны */
+        width: 80px; /* Размер элемента декора */
+        height: 80px;
         z-index: 10;
         box-shadow: none; /* Убедитесь, что элемент декора будет поверх других элементов */
     }

@@ -676,7 +676,7 @@ html {
     }
   
     .feedback-button {
-      width: 60%;
+      width: 50%;
       justify-content: center;
       margin-bottom: 2rem;
     }
@@ -768,7 +768,7 @@ html {
     }
   
     .feedback-button {
-      width: 50%;
+      width: 70%;
       font-size: 14px;
       padding: 10px 12px;
     }

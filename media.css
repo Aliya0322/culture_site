@@ -190,34 +190,29 @@ html {
 .cards-grid {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .card {
     width: 100%;
+    max-width: 100%;
     background: #f8f8f8;
+    box-sizing: border-box;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
     transition: transform 0.3s ease;
-    overflow: hidden;
 }
+
 
 .card:hover {
     transform: translateY(-5px);
 }
 
-.card img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
+
 
 .card-stats {
     display: flex;
@@ -503,9 +498,12 @@ html {
     }
 
     .cards-grid {
-        grid-template-columns: 1fr;
-        padding: 0 15px;
-        gap: 20px;
+        gap: 1.2rem;
+        padding: 0 10px;
+    }
+
+    .card {
+        padding: 15px;
     }
 
     .card-title {
@@ -513,7 +511,28 @@ html {
     }
 
     .card {
-        max-width: 100%;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .card img {
+        aspect-ratio: 16/9; /* Более широкий формат для мобильных */
+        margin-bottom: 12px;
+    }
+
+    .card-stats {
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .card-title {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+    .stat-badge {
+        padding: 5px 10px;
+        font-size: 11px;
     }
     .footer-content {
         grid-template-columns: 1fr;
@@ -583,7 +602,7 @@ html {
     }
 
     .feedback-button {
-        width: 50%;
+        width: 70%;
         font-size: 14px;
         padding: 10px 12px;
     }
