@@ -1155,7 +1155,7 @@ html {
         top: -20px;
         left: 50%;
         transform: translateX(-50%);
-        width: 400px; /* Уменьшаем размер узора */
+        width: 400px;
         height: auto;
     }
 
@@ -1166,7 +1166,7 @@ html {
     }
 
     .volunteer-content {
-        flex-direction: column; /* Располагаем элементы вертикально */
+        flex-direction: column;
         align-items: center;
         gap: 2rem;
         min-height: auto;
@@ -1187,6 +1187,7 @@ html {
         max-width: 100%;
         padding: 20px;
         margin-right: 0;
+        text-align: center;
     }
 
     .volunteer-text h2 {
@@ -1348,6 +1349,11 @@ html {
     }
     
     /* Видео секция */
+    .video-section {
+        padding: 30px 0;
+        height: 100%;
+        overflow: hidden;
+    }
     .overlay-content h2 {
         font-size: 16px;
     }
@@ -1396,5 +1402,15 @@ html {
     .volunteer-btn {
         padding: 10px 25px; /* Уменьшаем кнопку для маленьких экранов */
         font-size: 0.9rem;
+    }
+
+    .leadership-section .decorative-element {
+        position: absolute;
+        top: -40px; /* Элемент выходит из верхней части карточки */
+        right: -30px; /* Элемент выходит из правой стороны */
+        width: 100px; /* Размер элемента декора */
+        height: 100px;
+        z-index: 10;
+        box-shadow: none; /* Убедитесь, что элемент декора будет поверх других элементов */
     }
 }
