@@ -325,6 +325,8 @@ html {
 
 /* Стили для секции о руководстве */
 .leadership-section {
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #f9f9f9; /* Светлый фон для секции */
     padding: 60px 0;
     width: 100%;
@@ -550,9 +552,12 @@ html {
 
 /* ================= СПОНСОРЫ ================= */
 .sponsors {
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #fff;
     margin-top: 1rem;
     margin-bottom: 3rem;
+    
 }
 
 .sponsors .container {
@@ -567,12 +572,12 @@ html {
     width: 100%;
 }
 
-.sponsors-logos {
+/* .sponsors-logos {
     display: flex;
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
-}
+} */
 
 .sponsor {
     display: flex;
@@ -672,6 +677,8 @@ html {
     padding: 80px 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .events-calendar .section-title {
@@ -1139,7 +1146,7 @@ html {
     }
 
     .feedback-button {
-        width: 100%;
+        width: 50%;
         justify-content: center;
         margin-bottom: 2rem;
     }
@@ -1337,14 +1344,14 @@ html {
     }
 
     .feedback-button {
-        width: 70%;
+        width: 50%;
         font-size: 14px;
         padding: 10px 12px;
     }
 
     .social-link {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         font-size: 18px;
     }
     
