@@ -1,29 +1,23 @@
-document.querySelectorAll('.tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      const target = tab.dataset.tab;
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const eventCards = document.querySelectorAll('.event-card');
   
-      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-  
-      document.querySelectorAll('.tab-content').forEach(content => {
-        content.classList.remove('active');
-        if (content.id === target) content.classList.add('active');
+  filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+          // Удаляем активный класс у всех кнопок
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Добавляем активный класс текущей кнопке
+          this.classList.add('active');
+          
+          const filterValue = this.getAttribute('data-filter');
+          
+          eventCards.forEach(card => {
+              if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                  card.style.display = 'flex';
+              } else {
+                  card.style.display = 'none';
+              }
+          });
       });
-    });
   });
-  
-  function filterByYear(year) {
-    const buttons = document.querySelectorAll('.year-btn');
-    buttons.forEach(btn => btn.classList.remove('active'));
-    document.querySelector(`.year-btn[onclick*="${year}"]`).classList.add('active');
-  
-    const events = document.querySelectorAll('#past-events .card');
-    events.forEach(event => {
-      const eventYear = event.getAttribute('data-year');
-      if (year === 'all' || eventYear === year) {
-        event.style.display = 'block';
-      } else {
-        event.style.display = 'none';
-      }
-    });
-  }
+});

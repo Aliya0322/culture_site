@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="event_second_page.css">
-    <title>Фонд Астана - Прошедшее мероприятие</title>
+    <link rel="stylesheet" href="help.css">
+    <title>Фонд Астана - Помощь фонду</title>
 </head>
 <body>
     <div class="frame-box">
@@ -53,45 +53,87 @@
                     <a href="/event.html">МЕРОПРИЯТИЯ</a>
                     <a href="/media.html">СМИ О НАС</a>
                     <a href="/projects.html">ПРОЕКТЫ</a>
-                    <a href="/help.html">ПОМОЩЬ ФОНДУ</a>
+                    <a href="/help.html" class="active">ПОМОЩЬ ФОНДУ</a>
                     <a href="#contacts">КОНТАКТЫ</a>
                 </nav>
             </div>
         </header>
 
-        <!-- Секция информации о мероприятии -->
-        <section class="event-section">
+        <!-- Секция помощи фонду -->
+        <section class="help-section">
             <div class="container">
-                <div class="event-content">
-                    <div class="event-main">
-                        <h1 class="event-title">Фестиваль культур "Единство в многообразии"</h1>
-                        
-                        <div class="event-meta">
-                            <span class="event-date"><i class="far fa-calendar-alt"></i> 15 апреля 2025</span>
-                            <span class="event-time"><i class="far fa-clock"></i> Начало в 18:00</span>
-                            <span class="event-location"><i class="fas fa-map-marker-alt"></i> ДК "Содружество", Москва</span>
+                <h1 class="section-title">Помощь фонду</h1>
+                <p class="section-subtitle">Поддержите наши инициативы и станьте частью команды</p>
+                
+                <div class="help-cards">
+                    <!-- Финансовая помощь -->
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
                         </div>
+                        <h3 class="help-title">Финансовая помощь</h3>
+                        <p class="help-description">Ваши пожертвования помогают реализовывать наши проекты</p>
                         
-                        <div class="event-description">
-                            <h2>О мероприятии</h2>
-                            <p>15 апреля 2025 года в Доме культуры "Содружество" состоялся грандиозный фестиваль культур "Единство в многообразии", организованный Фондом "Астана". Мероприятие собрало более 500 участников и гостей, представителей 15 национальных диаспор.</p>
+                        <div class="donation-methods">
+                            <div class="donation-method">
+                                <h4>Банковский перевод:</h4>
+                                <ul class="bank-details">
+                                    <li><strong>БИК:</strong> XXXXXXXX</li>
+                                    <li><strong>ИИК:</strong> KZXXXXXXXXXXXX</li>
+                                    <li><strong>Банк:</strong> АО "Народный Банк Казахстана"</li>
+                                </ul>
+                            </div>
                             
-                            <h3>Программа мероприятия:</h3>
-                            <ul class="event-program">
-                                <li>Торжественное открытие с участием почетных гостей</li>
-                                <li>Выступления национальных творческих коллективов</li>
-                                <li>Выставка народных промыслов и ремесел</li>
-                                <li>Мастер-классы по традиционным танцам и ремеслам</li>
-                                <li>Дегустация блюд национальных кухонь</li>
-                                <li>Круглый стол по вопросам межкультурного диалога</li>
-                            </ul>
+                            <div class="donation-method">
+                                <h4>Онлайн-платежи:</h4>
+                                <ul class="online-payments">
+                                    <li><i class="fas fa-mobile-alt"></i> Через Kaspi.kz</li>
+                                    <li><i class="fab fa-paypal"></i> Через PayPal</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="event-poster">
-                        <img src="/img/event-poster.jpg" alt="Постер мероприятия" class="poster-image">
-                        <div class="poster-caption">Официальный постер мероприятия</div>
+                    <!-- Волонтерство -->
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+                        <h3 class="help-title">Волонтерство</h3>
+                        <p class="help-description">Присоединяйтесь к нашей команде волонтеров</p>
+                        
+                        <ul class="volunteer-steps">
+                            <li><i class="fas fa-file-alt"></i> Заполните анкету на нашем сайте</li>
+                            <li><i class="fas fa-laptop"></i> Пройдите ознакомительный вебинар</li>
+                            <li><i class="fas fa-tasks"></i> Выберите направление работы</li>
+                            <li><i class="fas fa-rocket"></i> Начните участвовать в проектах!</li>
+                        </ul>
+                        
+                        <button class="help-button">Стать волонтером</button>
                     </div>
+                    
+                    <!-- Другие способы -->
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="help-title">Другие способы поддержки</h3>
+                        <p class="help-description">Есть много способов помочь нашему фонду</p>
+                        
+                        <ul class="other-help">
+                            <li><strong><i class="fas fa-book"></i> Вещи:</strong> принимаем книги, канцтовары, оборудование</li>
+                            <li><strong><i class="fas fa-handshake"></i> Связи:</strong> помогите с партнерствами и информационной поддержкой</li>
+                            <li><strong><i class="fas fa-truck"></i> Транспорт:</strong> помощь в организации перевозок для мероприятий</li>
+                            <li><strong><i class="fas fa-graduation-cap"></i> Экспертиза:</strong> поделитесь профессиональными знаниями</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="help-contact">
+                    <p>По всем вопросам помощи фонду:</p>
+                    <a href="mailto:help@astana-fund.kz" class="contact-email">
+                        <i class="fas fa-envelope"></i> help@astana-fund.kz
+                    </a>
                 </div>
             </div>
         </section>
@@ -140,7 +182,7 @@
         </footer>
     </div>
     
-    <script src="js/menu.js" defer></script>
-    <script src="js/search.js" defer></script>
+    <script src="menu.js" defer></script>
+    <script src="search.js" defer></script>
 </body>
 </html>

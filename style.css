@@ -45,6 +45,8 @@ html {
     padding-bottom: 15px;
 }
 
+
+
 /* ================= ОСНОВНЫЕ СТИЛИ ================= */
 .frame-box {
     height: auto;
@@ -681,6 +683,7 @@ html {
     border-radius: 12px;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 1rem;
 }
 
 .events-calendar .section-title {
@@ -745,7 +748,6 @@ html {
 
 /* Стили отдельных карточек */
 .card {
-    width: 100%;
     max-width: 350px;
     background: #f8f8f8;
     border-radius: 12px;
@@ -826,6 +828,8 @@ html {
     color: #659dbd;
     transform: translateX(5px);
 }
+
+
 
 /* ================= ФУТЕР ================= */
 .site-footer {

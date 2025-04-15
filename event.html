@@ -1,164 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="event.css">
-    <title>Astana Fund Web site</title>
+    <title>Фонд Астана - Мероприятия</title>
 </head>
 <body>
-  <div class="frame-box">
-      <header class="header">
-          <div class="container">
-              <div class="header-top">
-                  <div class="logo-box">
-                      <a href="/index.html" class="logo-link">
-                          <img src="/img/logo.png" alt="Логотип">
-                      </a>
-                      <div>
-                          <a href="/index.html" class="logo-link">
-                              <!-- Десктопная версия -->
-                              <div class="logo-text desktop-logo-text">
-                                  Фонд содействия развитию дружбы народов и<br>
-                                  национальных культур<br>
-                                  "АСТАНА"
-                                </div>
-                                
-                                <!-- Мобильная версия -->
-                                <div class="logo-text mobile-logo-text">
-                                  Фонд содействия развитию дружбы
-                                  народов и национальных культур
-                                  "АСТАНА"
-                                </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="social-buttons">
-                      <div class="search-wrapper">
-                        <a href="#" class="search-button" id="search-button">
-                          <i class="fas fa-search"></i>
-                        </a>
-                    
-                        <div class="search-container" id="search-container">
-                          <input type="text" id="search-input" placeholder="Поиск по сайту..." />
-                        </div>
-                      </div>
-                    
-                      <a href="#" class="whatsapp-button" id="whatsapp-button">
-                        <i class="fa-brands fa-whatsapp"></i>
-                      </a>
-                    
-                      <div class="menu-icon" id="menu-icon">
-                        <i class="fa-solid fa-bars"></i>
-                      </div>
-                    </div>
-              </div>
-              <nav class="nav" id="nav-links">
-                  <a href="/about.html">О ФОНДЕ</a>
-                  <a href="/event.html">МЕРОПРИЯТИЯ</a>
-                  <a href="/media.html">СМИ О НАС</a>
-                  <a href="#partners">ПАРТНЕРЫ</a>
-                  <a href="#">ПРОЕКТЫ</a>
-                  <a href="#contacts">КОНТАКТЫ</a>
-              </nav>
-          </div>
-      </header>
-        <section class="tabs-wrapper">
+    <div class="frame-box">
+        <header class="header">
             <div class="container">
-              <h2 class="tabs-header">Мероприятия</h2>
-          
-              <!-- Горизонтальные табы -->
-              <div class="tabs-horizontal">
-                <button class="tab active" data-tab="current">Актуальные</button>
-                <button class="tab" data-tab="past">Прошедшие</button>
-              </div>
-          
-              <!-- Контент табов -->
-              <div class="tabs-content">
-                <!-- Актуальные -->
-<div class="tab-content active" id="current">
-    <div class="cards-grid">
-      <article class="card">
-        <img src="/img/event-dev.jpg" alt="Конференция по веб-разработке">
-        <div class="card-stats">
-          <span class="stat-badge">15 октября 2023</span>
-        </div>
-        <h3 class="card-title">Конференция по веб-разработке</h3>
-        <p>Ежегодная конференция для веб-разработчиков с участием ведущих экспертов отрасли.</p>
-        <a href="/event_second_page.html" class="card-link">Подробнее →</a>
-      </article>
-  
-      <article class="card">
-        <img src="/img/event-tech.jpg" alt="Выставка технологий">
-        <div class="card-stats">
-          <span class="stat-badge">20–22 ноября 2023</span>
-        </div>
-        <h3 class="card-title">Выставка современных технологий</h3>
-        <p>Крупнейшая выставка инновационных технологий и решений для бизнеса.</p>
-        <a href="#" class="card-link">Подробнее →</a>
-      </article>
-    </div>
-  </div>
-  
-  <!-- Прошедшие -->
-  <div class="tab-content" id="past">
-    <div class="year-filter">
-      <div class="year-btn active" onclick="filterByYear('all')">2025</div>
-      <div class="year-btn" onclick="filterByYear('2023')">2024</div>
-    </div>
-  
-    <div class="cards-grid" id="past-events">
-      <article class="card" data-year="2023">
-        <img src="/img/event-art.jpg" alt="Фестиваль искусств">
-        <div class="card-stats">
-          <span class="stat-badge">12–15 мая 2023</span>
-        </div>
-        <h3 class="card-title">Фестиваль искусств</h3>
-        <p>Международный фестиваль современного искусства с участием художников из 15 стран.</p>
-        <a href="/event_past.html" class="card-link">Подробнее →</a>
-      </article>
-  
-      <article class="card" data-year="2022">
-        <img src="/img/event-summit.jpg" alt="Технологический саммит">
-        <div class="card-stats">
-          <span class="stat-badge">10–12 сентября 2022</span>
-        </div>
-        <h3 class="card-title">Технологический саммит</h3>
-        <p>Обсуждение будущего технологий с лидерами IT-индустрии.</p>
-        <a href="#" class="card-link">Подробнее →</a>
-      </article>
-  
-      <article class="card" data-year="2022">
-        <img src="/img/event-marketing.jpg" alt="Цифровой маркетинг">
-        <div class="card-stats">
-          <span class="stat-badge">5–7 апреля 2022</span>
-        </div>
-        <h3 class="card-title">Конференция по цифровому маркетингу</h3>
-        <p>Лучшие практики и тренды в области цифрового маркетинга.</p>
-        <a href="#" class="card-link">Подробнее →</a>
-      </article>
-  
-      <article class="card" data-year="2021">
-        <img src="/img/event-business.jpg" alt="Форум предпринимателей">
-        <div class="card-stats">
-          <span class="stat-badge">15–17 ноября 2021</span>
-        </div>
-        <h3 class="card-title">Форум предпринимателей</h3>
-        <p>Крупнейшее мероприятие для малого и среднего бизнеса.</p>
-        <a href="#" class="card-link">Подробнее →</a>
-      </article>
-    </div>
-  </div>
+                <div class="header-top">
+                    <div class="logo-box">
+                        <a href="/index.html" class="logo-link">
+                            <img src="/img/logo.png" alt="Логотип">
+                        </a>
+                        <div>
+                            <a href="/index.html" class="logo-link">
+                                <div class="logo-text desktop-logo-text">
+                                    Фонд содействия развитию дружбы народов и<br>
+                                    национальных культур<br>
+                                    "АСТАНА"
+                                </div>
+                                <div class="logo-text mobile-logo-text">
+                                    Фонд содействия развитию дружбы
+                                    народов и национальных культур
+                                    "АСТАНА"
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="social-buttons">
+                        <div class="search-wrapper">
+                            <a href="#" class="search-button" id="search-button">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <div class="search-container" id="search-container">
+                                <input type="text" id="search-input" placeholder="Поиск по сайту..." />
+                            </div>
+                        </div>
+                        <a href="#" class="whatsapp-button" id="whatsapp-button">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <div class="menu-icon" id="menu-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <nav class="nav" id="nav-links">
+                    <a href="/about.html">О ФОНДЕ</a>
+                    <a href="/event.html">МЕРОПРИЯТИЯ</a>
+                    <a href="/media.html">СМИ О НАС</a>
+                    <a href="/projects.html">ПРОЕКТЫ</a>
+                    <a href="/help.html">ПОМОЩЬ ФОНДУ</a>
+                    <a href="#contacts">КОНТАКТЫ</a>
+                </nav>
             </div>
-          </section>                 
-          <footer class="site-footer" id="contacts">
+        </header>
+
+        <!-- Секция мероприятий -->
+        <section class="events-section">
+            <div class="container">
+                <h1 class="section-title">Мероприятия фонда</h1>
+                <p class="section-subtitle">Культурные события, фестивали и встречи, организуемые фондом</p>
+                
+                <div class="events-filter">
+                    <button class="filter-btn active" data-filter="all">Все мероприятия</button>
+                    <button class="filter-btn" data-filter="current">Предстоящие</button>
+                    <button class="filter-btn" data-filter="past">Прошедшие</button>
+                </div>
+                
+                <div class="events-grid">
+                    <!-- Мероприятие 1 -->
+                    <article class="event-card" data-category="current">
+                        <div class="event-image">
+                            <img src="/img/events/cultural-festival.jpg" alt="Фестиваль культур">
+                            <span class="event-status current">Предстоящее</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Фестиваль культур "Единство в многообразии"</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-calendar-alt"></i> 15 апреля 2025</span>
+                                <span><i class="far fa-clock"></i> 18:00</span>
+                                <span><i class="fas fa-map-marker-alt"></i> ДК "Содружество", Москва</span>
+                            </div>
+                            <p class="event-excerpt">Грандиозный фестиваль с участием 15 национальных диаспор. Выступления, мастер-классы, дегустация блюд.</p>
+                            <div class="event-footer">
+                                <a href="/event_second_page.html" class="event-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                                <button class="event-register">Зарегистрироваться</button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Мероприятие 2 -->
+                    <article class="event-card" data-category="current">
+                        <div class="event-image">
+                            <img src="/img/events/art-exhibition.jpg" alt="Выставка искусства">
+                            <span class="event-status current">Предстоящее</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Выставка современного этнического искусства</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-calendar-alt"></i> 20-25 мая 2025</span>
+                                <span><i class="far fa-clock"></i> 11:00-19:00</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Галерея "Арт-Этно", Москва</span>
+                            </div>
+                            <p class="event-excerpt">Работы художников из разных регионов России, объединенные темой сохранения культурного наследия.</p>
+                            <div class="event-footer">
+                                <a href="/events/art-exhibition.html" class="event-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                                <button class="event-register">Зарегистрироваться</button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Мероприятие 3 -->
+                    <article class="event-card" data-category="past">
+                        <div class="event-image">
+                            <img src="/img/events/music-festival.jpg" alt="Музыкальный фестиваль">
+                            <span class="event-status past">Прошедшее</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Международный музыкальный фестиваль</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-calendar-alt"></i> 12-15 ноября 2024</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Концертный зал "Этносфера"</span>
+                            </div>
+                            <p class="event-excerpt">Фестиваль народной музыки с участием коллективов из 10 стран. Более 5000 зрителей.</p>
+                            <div class="event-footer">
+                                <a href="/event_past.html" class="event-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Мероприятие 4 -->
+                    <article class="event-card" data-category="past">
+                        <div class="event-image">
+                            <img src="/img/events/conference.jpg" alt="Конференция">
+                            <span class="event-status past">Прошедшее</span>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Конференция по межкультурному диалогу</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-calendar-alt"></i> 5-7 сентября 2024</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Гостиница "Националь"</span>
+                            </div>
+                            <p class="event-excerpt">Эксперты из 15 стран обсуждали вопросы сохранения культурного разнообразия в современном мире.</p>
+                            <div class="event-footer">
+                                <a href="/events/conference.html" class="event-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+              
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer" id="contacts">
             <div class="container">
                 <div class="footer-content">
                     <div class="footer-main">
                         <h2 class="footer-title">ФОНД "АСТАНА"</h2>
-                        <p class="footer-description">Фонд содействия развитию дружбы народов и<br> национальных культур "Астана"</p>
+                        <p class="footer-description">Фонд содействия развитию дружбы народов и национальных культур "Астана"</p>
                         <p><a href="/privacy-policy.html" class="privacy-policy-link" target="_blank">Политика обработки персональных данных</a></p>
                         <p><a href="documents/Устав.pdf" class="privacy-policy-link" target="_blank">Учредительные документы</a></p>
                     </div>
@@ -195,8 +198,10 @@
                 </div>
             </div>
         </footer>
-    <script src="event.js" defer></script>
+    </div>
+    
     <script src="menu.js" defer></script>
     <script src="search.js" defer></script>
+    <script src="event.js" defer></script>
 </body>
 </html>

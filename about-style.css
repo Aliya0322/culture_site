@@ -233,157 +233,293 @@ html {
     text-align: left;
 }
 
-.tabs-container {
-    position: relative;
-    display: flex;
-    gap: 60px;
-    align-items: flex-start;
+/* О ФОНДЕ - Табы */
+.about-tabs {
+  background-color: #fff;
 }
 
-.decorative-element {
-  position: absolute;
-  top: -50px; /* Элемент выходит из верхней части карточки */
-  right: -50px; /* Элемент выходит из правой стороны */
-  width: auto;
-  height: 130px;
-  z-index: 10;
-  box-shadow: none; /* Убедитесь, что элемент декора будет поверх других элементов */
+.section-title {
+  font-size: 36px;
+  color: #00ABC2;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+
+.tabs-container {
+  display: flex;
+  gap: 30px;
+  position: relative;
 }
 
 .tabs-sidebar {
-    flex: 0 0 250px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .tab-btn {
-    padding: 15px 20px;
-    background: #fff;
-    border: 2px solid #00ABC2;
-    color: #00ABC2;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: left;
-    width: 100%;
+  padding: 15px 20px;
+  background: #f5f6f6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  color: #333;
+  transition: all 0.3s ease;
 }
 
 .tab-btn:hover {
-    background: rgba(0, 171, 194, 0.1);
+  background: #00ABC2;
+  color: white;
 }
 
 .tab-btn.active {
-    background: #00ABC2;
-    color: white;
+  background: #00ABC2;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 171, 194, 0.3);
 }
 
 .tabs-content {
-    flex: 1;
-    min-height: 300px;
+  flex: 1;
 }
 
 .tab-pane {
-    display: none;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    height: 100%;
-}
-
-.tab-pane h3 {
-    margin-bottom: 3rem;
+  display: none;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .tab-pane.active {
-    display: block;
+  display: block;
+  animation: fadeIn 0.5s ease;
 }
 
-.tab-btn.active p, li {
-    color: #333333;
-    line-height: 1.7;
-    margin-bottom: 25px;
-    font-size: 16px;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-
-.leadership-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+/* Стили для контента табов */
+.tab-pane h2, 
+.tab-pane h3 {
+  color: #00ABC2;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
-.leader-card {
-    text-align: center;
-    padding: 20px;
-    background: #f8f8f8;
-    border-radius: 10px;
+.tab-pane h2 {
+  font-size: 28px;
 }
 
-.leader-card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
+.tab-pane h3 {
+  font-size: 22px;
 }
 
-/* Стили для секции "Команда" */
+.styled-list {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.styled-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.styled-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: #00ABC2;
+  border-radius: 50%;
+}
+
+.structure-list {
+  padding-left: 20px;
+}
+
+.structure-list li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.structure-list ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+/* Команда */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 30px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .team-card {
-  text-align: center;
-  padding: 20px;
+  background: #fff;
   border-radius: 10px;
-  background: #f9f9f9;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 171, 194, 0.15);
 }
 
 .team-card img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 100%;
+  height: 250px;
   object-fit: cover;
-  margin: 0 auto 15px;
-  display: block;
+  border-bottom: 3px solid #00ABC2;
 }
 
-/* Стили для секции "Как помочь" */
+.team-card h4 {
+  margin: 15px 20px 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.team-card .position {
+  margin: 0 20px;
+  color: #00ABC2;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.team-card .bio {
+  margin: 15px 20px 20px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Руководство */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.leader-card {
+  text-align: center;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-5px);
+}
+
+.leader-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00ABC2;
+  margin-bottom: 20px;
+}
+
+.leader-card h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.leader-card .position {
+  color: #00ABC2;
+  font-weight: 600;
+}
+
+/* Как помочь */
 .help-section {
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.help-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.payment-methods {
+  padding-left: 20px;
+}
+
+.payment-methods li {
+  margin-bottom: 15px;
 }
 
 .payment-link {
-  display: inline-block;
-  margin: 5px 10px 5px 0;
-  color: #0066cc;
+  color: #00ABC2;
   text-decoration: none;
+  font-weight: 600;
+}
+
+.payment-link:hover {
+  text-decoration: underline;
+}
+
+.volunteer-steps {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.volunteer-steps li {
+  margin-bottom: 10px;
 }
 
 .btn-volunteer {
   display: inline-block;
-  padding: 10px 20px;
-  background: #ff5722;
+  padding: 12px 25px;
+  background: #00ABC2;
   color: white;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  border: 2px solid #fff;
+  font-weight: 600;
   margin-top: 15px;
+  transition: all 0.3s ease;
 }
 
 .btn-volunteer:hover {
-  background: #e05d00;
+  background: #008299;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 171, 194, 0.3);
+}
+
+.support-options {
+  padding-left: 20px;
+}
+
+.support-options li {
+  margin-bottom: 10px;
+}
+
+.contact-support {
+  margin-top: 20px;
+}
+
+.contact-support a {
+  color: #00ABC2;
+  font-weight: 600;
 }
 
 /* ================= ФУТЕР ================= */
@@ -627,34 +763,19 @@ html {
     gap: 15px;
     position: relative;
 }
-    .section-title {
-      font-size: 28px;
-    }
-  
-    .tabs-container {
-      flex-direction: column;
-    }
-  
-    .tabs-sidebar {
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-      gap: 10px;
-    }
-  
-    .tab-btn {
-      flex: 1 1 48%;
-      min-width: 150px;
-      padding: 12px 15px;
-    }
-  
-    .tab-pane {
-      padding: 20px;
-    }
-  
-    .leadership-grid {
-      grid-template-columns: 1fr;
-    }
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.tab-pane {
+  padding: 20px;
+}
+
+.team-grid,
+.leadership-grid {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
   
     .footer-content {
       grid-template-columns: 1fr;
@@ -749,6 +870,24 @@ html {
     .swiper {
       height: 200px;
     }
+    .section-title {
+      font-size: 24px;
+  }
+  
+  .tab-btn {
+      padding: 12px 15px;
+      font-size: 14px;
+  }
+  
+  .team-grid,
+  .leadership-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .leader-card img {
+      width: 120px;
+      height: 120px;
+  }
   
     .footer-title {
       font-size: 18px;
