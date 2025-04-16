@@ -18,18 +18,11 @@ html {
 }
 
 .section-title {
-    font-family: 'QazFont', sans-serif;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 1rem;
-    color: #00ABC2; 
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-    line-height: 1.3;
-    font-size: 28px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    padding-bottom: 15px;
-}
+    font-size: 36px;
+    color: #00ABC2;
+    text-align: center;
+    margin-bottom: 15px;
+  }
 
 /* ================= ОСНОВНЫЕ СТИЛИ ================= */
 .frame-box {
@@ -179,6 +172,8 @@ html {
 /* Стили для секции помощи */
 .help-section {
     padding: 60px 0;
+    text-align: center;
+    align-items: center;
 }
 
 .help-cards {
@@ -211,7 +206,13 @@ html {
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
-
+.section-subtitle {
+    color: #666;
+    font-size: 18px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 .help-description {
     color: #7f8c8d;
     margin-bottom: 20px;
@@ -234,6 +235,7 @@ html {
 .bank-details, .online-payments, .volunteer-steps, .other-help {
     list-style: none;
     padding-left: 0;
+    text-align: left;
 }
 
 .bank-details li, .online-payments li, .volunteer-steps li, .other-help li {
@@ -249,18 +251,16 @@ html {
 }
 
 .help-button {
-    background-color: #00ABC2;
-    color: white;
-    border: none;
+    display: inline-block;
     padding: 12px 25px;
+    background: #00ABC2;
+    color: white;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-    width: 100%;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s ease;
 }
-
 .help-button:hover {
     background-color: #2980b9;
 }

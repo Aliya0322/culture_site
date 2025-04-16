@@ -184,15 +184,6 @@ html {
     padding-bottom: 15px;
 }
 
-.event-title:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 80px;
-    height: 3px;
-    background: #00ABC2;
-}
 
 .event-meta {
     display: flex;
@@ -219,7 +210,7 @@ html {
 
 .event-description h3 {
     font-size: 22px;
-    color: #00ABC2;
+    color: #333;
     margin: 20px 0 10px;
 }
 

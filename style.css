@@ -383,9 +383,14 @@ html {
 
 .leader-card p {
     font-size: 1rem;
-    color: #777;
+    color: #333;
 }
-
+.leader-card .bio {
+    margin: 15px 20px 20px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+  }
 .leadership-section .decorative-element {
     position: absolute;
     top: -30px; /* Элемент выходит из верхней части карточки */

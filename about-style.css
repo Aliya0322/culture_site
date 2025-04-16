@@ -242,8 +242,7 @@ html {
   font-size: 36px;
   color: #00ABC2;
   text-align: center;
-  margin-bottom: 40px;
-  position: relative;
+  margin-bottom: 15px;
 }
 
 
@@ -325,12 +324,14 @@ html {
 .styled-list {
   padding-left: 20px;
   line-height: 1.6;
+
 }
 
 .styled-list li {
   margin-bottom: 10px;
   position: relative;
   padding-left: 25px;
+  list-style: none;
 }
 
 .styled-list li::before {
@@ -445,6 +446,13 @@ html {
 .leader-card .position {
   color: #00ABC2;
   font-weight: 600;
+}
+
+.leader-card .bio {
+  margin: 15px 20px 20px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /* Как помочь */

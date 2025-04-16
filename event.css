@@ -248,6 +248,8 @@ html {
 
 /* Основные стили */
 .events-section {
+  align-items: center;
+  justify-content: center;
   padding: 60px 0;
   background-color: #fff;
 }
