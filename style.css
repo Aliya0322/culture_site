@@ -648,6 +648,13 @@ html {
     padding: 0 20px;
 }
 
+.container-event {
+    background-color: #EAE7DC;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .about-mission__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -684,7 +691,7 @@ html {
 
 /* ================= КАЛЕНДАРЬ СОБЫТИЙ ================= */
 .events-calendar {
-    background-color: #f6f2b6;
+    background-color: #EAE7DC;
     padding: 80px 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     border-radius: 12px;

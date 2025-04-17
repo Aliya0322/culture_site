@@ -538,6 +538,10 @@ html {
   font-weight: 600;
 }
 
+.documents-list a {
+  color: #333;
+}
+
 /* ================= ФУТЕР ================= */
 .site-footer {
   background-color: #f0f0f0;
