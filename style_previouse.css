@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f6f2b6;  /* Спокойный, нейтральный фон */
+    background-color: #f4f1ea;  /* Спокойный, нейтральный фон */
     color: #333;
     margin: 0;
     font-family: QazFont;
@@ -49,14 +49,15 @@ html {
 
 /* ================= ОСНОВНЫЕ СТИЛИ ================= */
 .frame-box {
-    background-color: #f6f2b6;
     height: auto;
-    background: #f6f2b6;
+    background: #fff;
     border: 20px solid #f5f6f6;
     padding: 30px 0;
 }
 
-
+.header {
+    background: #fff;
+}
 
 .header-top {
     display: flex;
@@ -266,7 +267,7 @@ html {
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 40%; /* Соотношение сторон видео */
+    padding-bottom: 40%;
 }
 
 .video-container video {
@@ -286,9 +287,8 @@ html {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Изменено с center на flex-end */
+    align-items: center;
     background: rgba(0, 0, 0, 0.4);
-    padding-bottom: 5%; /* Добавляем отступ снизу */
 }
 
 .overlay-content {
@@ -296,7 +296,6 @@ html {
     padding: 20px;
     text-align: center;
     color: white;
-    margin-bottom: 20px; /* Дополнительный отступ снизу */
 }
 
 .overlay-content h2 {
@@ -330,7 +329,7 @@ html {
 .leadership-section {
     max-width: 1200px;
     margin: 0 auto;
-    /* background-color: #f9f9f9; Светлый фон для секции */
+    background-color: #f9f9f9; /* Светлый фон для секции */
     padding: 60px 0;
     width: 100%;
     margin-bottom: 4rem;
@@ -637,12 +636,11 @@ html {
 
 /* ================= О НАС / МИССИЯ ================= */
 .about-mission {
-    background-color: #f6f2b6;
+    background-color: #ffffff;
     padding: 80px 0;
 }
 
 .container {
-    background-color: #f6f2b6;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -684,7 +682,7 @@ html {
 
 /* ================= КАЛЕНДАРЬ СОБЫТИЙ ================= */
 .events-calendar {
-    background-color: #f6f2b6;
+    background-color: #EAE7DC;
     padding: 80px 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
@@ -713,6 +711,7 @@ html {
 }
 
 .past-events {
+    background-color: #ffffff;
     padding: 80px 0;
 }
 
@@ -839,6 +838,7 @@ html {
 
 /* ================= ФУТЕР ================= */
 .site-footer {
+    background-color: #f0f0f0;
     color: #333;
     padding: 40px 0;
     border-top: 2px solid #ddd;
