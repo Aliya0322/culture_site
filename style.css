@@ -143,6 +143,9 @@ html {
     border-radius: 10px;
     margin-top: 2rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 }
 
 .nav a {
@@ -279,6 +282,7 @@ html {
 }
 
 .video-overlay {
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -287,11 +291,12 @@ html {
     display: flex;
     justify-content: center;
     align-items: flex-end; /* Изменено с center на flex-end */
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     padding-bottom: 5%; /* Добавляем отступ снизу */
 }
 
 .overlay-content {
+    pointer-events: auto;
     width: 90%;
     padding: 20px;
     text-align: center;
@@ -965,6 +970,7 @@ html {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 2rem;
 }
 
 .feedback-button:hover {
