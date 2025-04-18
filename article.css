@@ -185,186 +185,142 @@ html {
     pointer-events: auto;
 }
 
+/* Стили для страницы статьи */
+.article-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
 
-/* Стили для вкладок */
-.tabs {
+.article-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.article-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.article-title {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.article-meta {
     display: flex;
     justify-content: center;
-    margin: 30px 0 40px;
-    flex-wrap: wrap;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+    font-size: 14px;
 }
 
-.tab-button {
-    padding: 12px 25px;
-    background: #f5f5f5;
-    border: none;
-    border-radius: 30px;
+.article-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.article-content {
+    line-height: 1.8;
+    color: #34495e;
+}
+
+.article-content p {
+    margin-bottom: 20px;
     font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: #555;
 }
 
-.tab-button:hover {
-    background: #e0e0e0;
+.article-content h2, 
+.article-content h3 {
+    color: #2c3e50;
+    margin: 30px 0 20px;
 }
 
-.tab-button.active {
-    background: #00ABC2;
-    color: white;
-    box-shadow: 0 4px 12px rgba(0, 171, 194, 0.3);
+.article-content h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 8px;
 }
 
-.tab-content {
-    display: none;
-    animation: fadeIn 0.5s ease;
+.article-content h3 {
+    font-size: 20px;
 }
 
-.tab-content.active {
+.article-content blockquote {
+    border-left: 4px solid #00ABC2;
+    padding-left: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
     display: block;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.article-footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
 }
 
-/* Остальные стили остаются без изменений */
-.interesting-section {
-    padding: 60px 0;
+.article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
-.page-title {
-    font-size: 36px;
-    color: #00ABC2;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 40px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.resources-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-    margin-bottom: 60px;
-}
-
-.resource-card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    border: 1px solid #eee;
-}
-
-.resource-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-}
-
-.resource-image {
-    height: 180px;
-    overflow: hidden;
-    position: relative;
-}
-
-.resource-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.resource-card:hover .resource-image img {
-    transform: scale(1.05);
-}
-
-.resource-content {
-    padding: 20px;
-}
-
-.resource-type {
+.tag {
     display: inline-block;
-    padding: 4px 12px;
-    background: #f1c40f;
-    color: white;
+    padding: 5px 12px;
+    background: #f1f1f1;
     border-radius: 20px;
     font-size: 12px;
-    margin-bottom: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.video-type { background: #ff5722; }
-.music-type { background: #00ABC2; }
-.article-type { background: #33af67; }
-
-.resource-title {
-    font-size: 18px;
-    margin-bottom: 12px;
-    color: #2c3e50;
-    line-height: 1.4;
-}
-
-.resource-description {
     color: #7f8c8d;
-    font-size: 14px;
-    margin-bottom: 20px;
-    line-height: 1.6;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.resource-link {
+.tag:hover {
+    background: #00ABC2;
+    color: white;
+}
+
+.back-link {
     display: inline-flex;
     align-items: center;
-    color: black;
+    color: #00ABC2;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
-    font-size: 14px;
 }
 
-.resource-link:hover {
+.back-link:hover {
     color: #c0392b;
 }
 
-.resource-link i {
-    margin-left: 8px;
+.back-link i {
+    margin-right: 8px;
     transition: transform 0.3s ease;
-    font-size: 12px;
 }
 
-.resource-link:hover i {
-    transform: translateX(5px);
-}
-
-/* Адаптация для мобильных */
-@media (max-width: 768px) {
-    .tabs {
-        margin: 20px 0 30px;
-    }
-    
-    .tab-button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-    
-    .resources-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
+.back-link:hover i {
+    transform: translateX(-5px);
 }
 /* ================= ФУТЕР ================= */
 .site-footer {
@@ -661,8 +617,7 @@ html {
     color: #666;
     font-size: 14px;
 }
-
-/* Адаптация для мобильных устройств */
+/* Адаптация для мобильных */
 @media (max-width: 768px) {
     .frame-box {
         border: 8px solid #f5f6f6;
@@ -738,27 +693,21 @@ html {
         position: relative;
     }
 
-    .interesting-section {
-        padding: 40px 0;
+    .article-container {
+        padding: 25px;
     }
     
-    .page-title {
-        font-size: 28px;
-        margin-bottom: 30px;
+    .article-title {
+        font-size: 26px;
     }
     
-    .category-title {
-        font-size: 24px;
-        margin: 40px 0 25px;
+    .article-image {
+        height: 250px;
     }
     
-    .resources-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-    
-    .resource-image {
-        height: 160px;
+    .article-meta {
+        flex-direction: column;
+        gap: 8px;
     }
 
     .footer-content {
@@ -811,22 +760,21 @@ html {
         font-size: 14px;
         padding: 10px;
     }
-    .page-title {
-        font-size: 24px;
+    .article-section {
+        padding: 30px 0;
     }
     
-    .resource-content {
-        padding: 15px;
+    .article-container {
+        padding: 20px;
     }
     
-    .resource-title {
-        font-size: 16px;
+    .article-title {
+        font-size: 22px;
     }
     
-    .resource-description {
-        font-size: 13px;
+    .article-content p {
+        font-size: 15px;
     }
-
     .copyright {
         font-size: 12px;
         text-align: center;

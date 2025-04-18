@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="interesting.css">
-    <title>Интересное | Фонд "Астана"</title>
+    <title>Astana Fund Web site</title>
 </head>
 <body>
     <div class="frame-box">
@@ -64,15 +64,27 @@
                 </nav>
             </div>
         </header>
+<body>
+    <div class="frame-box">
+        <!-- Шапка (остается без изменений) -->
+        <header class="header">
+            <!-- ... -->
+        </header>
 
         <main class="interesting-section">
             <div class="container">
                 <h1 class="page-title">Интересное</h1>
                 <p class="section-subtitle">Откройте для себя богатство культур через видео, музыку и статьи</p>
                 
-                <!-- Раздел с видео -->
-                <section class="video-resources">
-                    <h2 class="category-title">Видео</h2>
+                <!-- Вкладки -->
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="video">Видео</button>
+                    <button class="tab-button" data-tab="music">Музыка</button>
+                    <button class="tab-button" data-tab="articles">Статьи</button>
+                </div>
+                
+                <!-- Содержимое вкладок -->
+                <div id="video" class="tab-content active">
                     <div class="resources-grid">
                         <!-- Видео 1 -->
                         <article class="resource-card">
@@ -119,11 +131,9 @@
                             </div>
                         </article>
                     </div>
-                </section>
+                </div>
                 
-                <!-- Раздел с музыкой -->
-                <section class="music-resources">
-                    <h2 class="category-title">Музыка</h2>
+                <div id="music" class="tab-content">
                     <div class="resources-grid">
                         <!-- Музыка 1 -->
                         <article class="resource-card">
@@ -170,11 +180,9 @@
                             </div>
                         </article>
                     </div>
-                </section>
+                </div>
                 
-                <!-- Раздел со статьями -->
-                <section class="article-resources">
-                    <h2 class="category-title">Статьи</h2>
+                <div id="articles" class="tab-content">
                     <div class="resources-grid">
                         <!-- Статья 1 -->
                         <article class="resource-card">
@@ -185,7 +193,7 @@
                                 <span class="resource-type article-type">Статья</span>
                                 <h3 class="resource-title">Сохранение культурного наследия в цифровую эпоху</h3>
                                 <p class="resource-description">Как современные технологии помогают сохранять традиции кочевых народов.</p>
-                                <a href="/articles/digital-heritage.html" class="resource-link">
+                                <a href="article.html" class="resource-link">
                                     Читать <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -200,7 +208,7 @@
                                 <span class="resource-type article-type">Статья</span>
                                 <h3 class="resource-title">Многоязычие как основа межкультурного диалога</h3>
                                 <p class="resource-description">Опыт Казахстана в сохранении языкового разнообразия.</p>
-                                <a href="/articles/multilingualism.html" class="resource-link">
+                                <a href="article.html" class="resource-link">
                                     Читать <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -215,16 +223,15 @@
                                 <span class="resource-type article-type">Статья</span>
                                 <h3 class="resource-title">Национальная кухня как культурный код</h3>
                                 <p class="resource-description">Как традиционные блюда рассказывают историю народа.</p>
-                                <a href="/articles/cuisine-culture.html" class="resource-link">
+                                <a href="article.html" class="resource-link">
                                     Читать <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
                         </article>
                     </div>
-                </section>
+                </div>
             </div>
         </main>
-
         <footer class="site-footer" id="contacts">
             <div class="container">
                 <div class="footer-content">
@@ -268,6 +275,27 @@
         </footer>
     </div>
 
+    <script>
+        // Скрипт для переключения вкладок
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Удаляем активный класс у всех кнопок и содержимого
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Добавляем активный класс текущей кнопке и соответствующему содержимому
+                    button.classList.add('active');
+                    const tabId = button.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+    
     <script src="/menu.js"></script>
     <script src="/search.js"></script>
 </body>
